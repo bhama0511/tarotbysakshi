@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Bliss by Saakshi | Spiritual Wellness Practitioner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lavender: '#E6E6FA',
+                        deepPurple: '#5D3FD3',
+                        midnightBlue: '#191970',
+                        gold: '#FFD700',
+                        softPurple: '#9370DB',
+                        mystic: '#8A2BE2',
+                        ethereal: '#BF55EC',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to bottom, #191970, #5D3FD3);
+            background-attachment: fixed;
+            color: #fff;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .gold-text {
+            color: #FFD700;
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+            background: rgba(93, 63, 211, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+        
+        .hero {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23191970'/%3E%3Cstop offset='1' stop-color='%235D3FD3'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff10' cx='12' cy='12' r='1'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)'/%3E%3C/svg%3E");
+            background-attachment: fixed;
+        }
+        
+        .star-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        .star {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            animation: twinkle 5s infinite;
+            opacity: 0.3;
+        }
+        
+        @keyframes twinkle {
+            0% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+            100% { opacity: 0.3; }
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .whatsapp-btn {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .cosmic-bg {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .mystical-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .crystal-pattern {
+            position: relative;
+        }
+        
+        .crystal-pattern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.3;
+            z-index: -1;
+        }
+        
+        .sacred-geometry {
+            position: relative;
+        }
+        
+        .sacred-geometry::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.07'%3E%3Cpath d='M50 0L0 50l50 50 50-50L50 0zm0 22.5L22.5 50 50 77.5 77.5 50 50 22.5z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.2;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Star Background -->
+    <div class="star-bg" id="starBackground"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-midnightBlue bg-opacity-80 backdrop-blur-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="text-gold text-2xl mr-2">✨</div>
+                <a href="index.html" class="text-xl md:text-2xl font-semibold gold-text">Tarot Bliss</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#about" class="hidden md:block text-white hover:text-gold transition">About</a>
+                <a href="#services" class="hidden md:block text-white hover:text-gold transition">Services</a>
+                <a href="#testimonials" class="hidden md:block text-white hover:text-gold transition">Testimonials</a>
+                <a href="https://www.instagram.com/tarotblissbysaakshi" target="_blank" class="text-white hover:text-gold transition">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <button id="mobileMenuBtn" class="md:hidden text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-midnightBlue bg-opacity-95 w-full">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-2">
+                <a href="#about" class="text-white hover:text-gold py-2 transition">About</a>
+                <a href="#services" class="text-white hover:text-gold py-2 transition">Services</a>
+                <a href="#testimonials" class="text-white hover:text-gold py-2 transition">Testimonials</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero min-h-screen flex items-center relative pt-16 sacred-geometry">
+        <div class="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                    Tap Into <span class="gold-text">Divine Guidance</span> & Healing with Saakshi
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-lavender opacity-90">
+                    Tarot, Rituals, Reiki & More – Personalized for Your Journey
+                </p>
+                <a href="https://wa.me/message/your-business-number" target="_blank" class="whatsapp-btn inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-full transition duration-300">
+                    <i class="fab fa-whatsapp text-xl mr-2"></i>
+                    Book a Session on WhatsApp
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gold rounded-full opacity-20 blur-xl"></div>
+                    <div class="floating relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-gold shadow-2xl">
+                        <svg class="w-full h-full text-softPurple" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" d="M47.7,-57.2C59.9,-45.8,66.8,-29.1,68.9,-12.1C71,4.9,68.3,22.2,59.4,35.3C50.5,48.3,35.5,57.1,18.4,65.5C1.3,73.9,-17.8,81.9,-33.6,76.5C-49.4,71.1,-61.8,52.4,-67.4,33.8C-73,15.2,-71.7,-3.3,-65.4,-19.1C-59.1,-34.9,-47.8,-48,-34.6,-59.1C-21.4,-70.2,-6.3,-79.3,8.1,-78.1C22.5,-76.9,35.5,-68.5,47.7,-57.2Z" transform="translate(100 100)" />
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg class="w-3/4 h-3/4 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 flex justify-center">
+            <a href="#about" class="text-white animate-bounce">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 relative crystal-pattern">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-2">Meet <span class="gold-text">Saakshi</span></h2>
+                    <div class="w-24 h-1 bg-gold mx-auto"></div>
+                </div>
+                <div class="bg-deepPurple bg-opacity-20 backdrop-blur-md p-6 md:p-10 rounded-2xl border border-white border-opacity-10 shadow-xl">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/3 mb-6 md:mb-0 md:pr-8">
+                            <div class="relative">
+                                <div class="absolute inset-0 bg-gold rounded-full opacity-20 blur-md"></div>
+                                <div class="relative w-48 h-48 mx-auto rounded-full overflow-hidden border-2 border-gold">
+                                    <svg class="w-full h-full text-deepPurple" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="currentColor" d="M47.7,-57.2C59.9,-45.8,66.8,-29.1,68.9,-12.1C71,4.9,68.3,22.2,59.4,35.3C50.5,48.3,35.5,57.1,18.4,65.5C1.3,73.9,-17.8,81.9,-33.6,76.5C-49.4,71.1,-61.8,52.4,-67.4,33.8C-73,15.2,-71.7,-3.3,-65.4,-19.1C-59.1,-34.9,-47.8,-48,-34.6,-59.1C-21.4,-70.2,-6.3,-79.3,8.1,-78.1C22.5,-76.9,35.5,-68.5,47.7,-57.2Z" transform="translate(100 100)" />
+                                    </svg>
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <svg class="w-3/4 h-3/4 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <p class="text-lg leading-relaxed mb-6">
+                                Guided by intuition and energy, I help souls find clarity, healing & purpose. 💫
+                            </p>
+                            <p class="text-lg leading-relaxed mb-6">
+                                My journey into the mystical arts began over a decade ago when I discovered my natural affinity for sensing energies and receiving divine guidance. Through years of dedicated practice and spiritual development, I've honed my abilities to channel messages from the universe that provide profound insights and healing.
+                            </p>
+                            <p class="text-lg leading-relaxed">
+                                Whether you're seeking answers about your relationships, career path, spiritual growth, or simply need guidance during challenging times, I'm here to illuminate your path forward with compassion and wisdom.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Instagram Feed Preview -->
+                <div class="mt-16">
+                    <h3 class="text-2xl font-semibold text-center mb-8">Follow My <span class="gold-text">Spiritual Journey</span></h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="aspect-square bg-deepPurple bg-opacity-20 rounded-lg overflow-hidden relative group">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <svg class="w-1/2 h-1/2 text-lavender opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z" />
+                                </svg>
+                            </div>
+                            <div class="absolute inset-0 bg-deepPurple bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="text-white text-sm">View on Instagram</span>
+                            </div>
+                        </div>
+                        <div class="aspect-square bg-deepPurple bg-opacity-20 rounded-lg overflow-hidden relative group">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <svg class="w-1/2 h-1/2 text-lavender opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z" />
+                                </svg>
+                            </div>
+                            <div class="absolute inset-0 bg-deepPurple bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="text-white text-sm">View on Instagram</span>
+                            </div>
+                        </div>
+                        <div class="aspect-square bg-deepPurple bg-opacity-20 rounded-lg overflow-hidden relative group">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <svg class="w-1/2 h-1/2 text-lavender opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z" />
+                                </svg>
+                            </div>
+                            <div class="absolute inset-0 bg-deepPurple bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="text-white text-sm">View on Instagram</span>
+                            </div>
+                        </div>
+                        <div class="aspect-square bg-deepPurple bg-opacity-20 rounded-lg overflow-hidden relative group">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <svg class="w-1/2 h-1/2 text-lavender opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z" />
+                                </svg>
+                            </div>
+                            <div class="absolute inset-0 bg-deepPurple bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="text-white text-sm">View on Instagram</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-6">
+                        <a href="https://www.instagram.com/tarotblissbysaakshi" target="_blank" class="inline-flex items-center text-white hover:text-gold transition">
+                            <i class="fab fa-instagram mr-2"></i>
+                            Follow @tarotblissbysaakshi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 relative mystical-pattern">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2">My <span class="gold-text">Services</span></h2>
+                <p class="text-lg text-lavender">Discover the perfect spiritual practice for your journey</p>
+                <div class="w-24 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Tarot Card Reading -->
+                <div class="service-card rounded-xl overflow-hidden">
+                    <div class="p-6 flex flex-col h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gold bg-opacity-20 flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M21.71,4.29a1,1,0,0,0-1.42,0L18,6.59V5a3,3,0,0,0-3-3H5A3,3,0,0,0,2,5V19a3,3,0,0,0,3,3H15a3,3,0,0,0,3-3V17.41l2.29,2.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42l-3-3a1,1,0,0,0-.33-.21,1,1,0,0,0-.76,0,1,1,0,0,0-.33.21l-3,3a1,1,0,0,0,1.42,1.42L16,17.41V19a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V5A1,1,0,0,1,5,4H15a1,1,0,0,1,1,1V6.59l-1.29-1.3a1,1,0,0,0-1.42,1.42l3,3a1,1,0,0,0,1.42,0l3-3A1,1,0,0,0,21.71,4.29Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Tarot Card Reading</h3>
+                        </div>
+                        <p class="text-lavender mb-4">Gain clarity and insights through the ancient wisdom of tarot cards. I'll connect with your energy to reveal guidance about your past, present, and future.</p>
+                        <div class="mt-auto pt-4">
+                            <a href="tarot.html" class="inline-flex items-center bg-deepPurple hover:bg-opacity-80 text-white font-medium py-2 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                View Service Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Oracle Card Reading -->
+                <div class="service-card rounded-xl overflow-hidden">
+                    <div class="p-6 flex flex-col h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gold bg-opacity-20 flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17,3H7A4,4,0,0,0,3,7V17a4,4,0,0,0,4,4H17a4,4,0,0,0,4-4V7A4,4,0,0,0,17,3ZM7,5H17a2,2,0,0,1,2,2v5H5V7A2,2,0,0,1,7,5ZM17,19H7a2,2,0,0,1-2-2V14H19v3A2,2,0,0,1,17,19Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Oracle Card Reading</h3>
+                        </div>
+                        <p class="text-lavender mb-4">Oracle cards offer spiritual guidance with beautiful imagery and intuitive messages. Perfect for those seeking gentle, positive direction.</p>
+                        <div class="mt-auto pt-4">
+                            <a href="oracle.html" class="inline-flex items-center bg-deepPurple hover:bg-opacity-80 text-white font-medium py-2 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                View Service Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dice Reading -->
+                <div class="service-card rounded-xl overflow-hidden">
+                    <div class="p-6 flex flex-col h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gold bg-opacity-20 flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19,5H5A3,3,0,0,0,2,8v8a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V8A3,3,0,0,0,19,5ZM5,7H19a1,1,0,0,1,1,1v2H4V8A1,1,0,0,1,5,7ZM19,17H5a1,1,0,0,1-1-1V12H20v4A1,1,0,0,1,19,17Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Dice Reading</h3>
+                        </div>
+                        <p class="text-lavender mb-4">An ancient divination practice that reveals answers through the patterns and numbers of dice. Quick insights for specific questions.</p>
+                        <div class="mt-auto pt-4">
+                            <a href="dice.html" class="inline-flex items-center bg-deepPurple hover:bg-opacity-80 text-white font-medium py-2 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                View Service Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Runes Reading -->
+                <div class="service-card rounded-xl overflow-hidden">
+                    <div class="p-6 flex flex-col h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gold bg-opacity-20 flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M21,4H3A1,1,0,0,0,2,5V19a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V5A1,1,0,0,0,21,4ZM8,17H4V13h4Zm0-6H4V7h4Zm6,6H10V13h4Zm0-6H10V7h4Zm6,6H16V13h4Zm0-6H16V7h4Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Runes Reading</h3>
+                        </div>
+                        <p class="text-lavender mb-4">Connect with ancient Norse wisdom through rune symbols. Uncover hidden influences and receive guidance from ancestral energies.</p>
+                        <div class="mt-auto pt-4">
+                            <a href="runes.html" class="inline-flex items-center bg-deepPurple hover:bg-opacity-80 text-white font-medium py-2 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                View Service Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Candle Spell -->
+                <div class="service-card rounded-xl overflow-hidden">
+                    <div class="p-6 flex flex-col h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gold bg-opacity-20 flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M18,2a1,1,0,0,0-1-1H7A1,1,0,0,0,6,2V4H7V3H17V4h1ZM8,11.236V5H16v6.236a2,2,0,0,1-1.106,1.789L12,14.619,9.106,13.025A2,2,0,0,1,8,11.236Zm10,6.708A3.956,3.956,0,0,0,16,14.057V13h1a1,1,0,0,0,0-2H16V10h1a1,1,0,0,0,0-2H16V7h1a1,1,0,0,0,0-2H7A1,1,0,0,0,7,7H8V8H7a1,1,0,0,0,0,2H8v1H7a1,1,0,0,0,0,2H8v1.057A3.956,3.956,0,0,0,6,17.944V22H18Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Candle Spell</h3>
+                        </div>
+                        <p class="text-lavender mb-4">Harness the transformative power of flame with personalized candle spells. Set intentions for love, prosperity, healing, or protection.</p>
+                        <div class="mt-auto pt-4">
+                            <a href="candle-spell.html" class="inline-flex items-center bg-deepPurple hover:bg-opacity-80 text-white font-medium py-2 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                View Service Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Candle Healing -->
+                <div class="service-card rounded-xl overflow-hidden">
+                    <div class="p-6 flex flex-col h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gold bg-opacity-20 flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Zm4-9H13V8a1,1,0,0,0-2,0v3H8a1,1,0,0,0,0,2h3v3a1,1,0,0,0,2,0V13h3a1,1,0,0,0,0-2Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Candle Healing</h3>
+                        </div>
+                        <p class="text-lavender mb-4">Experience deep energetic healing through the sacred flame. This ritual cleanses negative energies and restores balance to your aura.</p>
+                        <div class="mt-auto pt-4">
+                            <a href="candle-healing.html" class="inline-flex items-center bg-deepPurple hover:bg-opacity-80 text-white font-medium py-2 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                View Service Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reiki Healing -->
+                <div class="service-card rounded-xl overflow-hidden">
+                    <div class="p-6 flex flex-col h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gold bg-opacity-20 flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20ZM15.33,9.74a4.32,4.32,0,0,1,.67,2.26,4.73,4.73,0,0,1-2,3.83,1,1,0,0,0-.33,1.37,1,1,0,0,0,.85.48,1,1,0,0,0,.52-.15,6.68,6.68,0,0,0,2.92-5.53,6.33,6.33,0,0,0-1-3.31,1,1,0,1,0-1.67,1.05ZM12,8a4,4,0,1,0,4,4A4,4,0,0,0,12,8Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,12,14Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Reiki Healing</h3>
+                        </div>
+                        <p class="text-lavender mb-4">Channel universal life force energy to promote healing on physical, emotional, and spiritual levels. Experience deep relaxation and energy balancing.</p>
+                        <div class="mt-auto pt-4">
+                            <a href="reiki.html" class="inline-flex items-center bg-deepPurple hover:bg-opacity-80 text-white font-medium py-2 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                View Service Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Saraswati Reiki -->
+                <div class="service-card rounded-xl overflow-hidden">
+                    <div class="p-6 flex flex-col h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gold bg-opacity-20 flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20ZM14.09,9h-.23l-1.35,4.06L11.16,9h-.23L8.75,14.37a2.28,2.28,0,0,0-.12.64,1,1,0,0,0,.29.7,1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,.29-.7c0-.2-.05-.4-.11-.59L11.36,11l1.16,3.39a2.2,2.2,0,0,0-.11.59,1,1,0,0,0,.29.7,1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,.29-.7,2.28,2.28,0,0,0-.12-.64Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Saraswati Reiki</h3>
+                        </div>
+                        <p class="text-lavender mb-4">Specialized Reiki that connects with the divine energy of Goddess Saraswati. Enhances creativity, learning abilities, and spiritual wisdom.</p>
+                        <div class="mt-auto pt-4">
+                            <a href="saraswati-reiki.html" class="inline-flex items-center bg-deepPurple hover:bg-opacity-80 text-white font-medium py-2 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                View Service Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Maa Kamakhaya High Energy Ritual -->
+                <div class="service-card rounded-xl overflow-hidden">
+                    <div class="p-6 flex flex-col h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gold bg-opacity-20 flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20ZM17,9H15V7a1,1,0,0,0-2,0V9H11a1,1,0,0,0,0,2h2v4a1,1,0,0,0,2,0V11h2a1,1,0,0,0,0-2Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Maa Kamakhaya Ritual</h3>
+                        </div>
+                        <p class="text-lavender mb-4">A powerful ritual invoking the divine feminine energy of Goddess Kamakhya. Brings transformation, empowerment, and manifestation of desires.</p>
+                        <div class="mt-auto pt-4">
+                            <a href="kamakhaya-ritual.html" class="inline-flex items-center bg-deepPurple hover:bg-opacity-80 text-white font-medium py-2 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                View Service Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sulemani High Energy Ritual -->
+                <div class="service-card rounded-xl overflow-hidden">
+                    <div class="p-6 flex flex-col h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gold bg-opacity-20 flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20ZM16,11H13V8a1,1,0,0,0-2,0v3H8a1,1,0,0,0,0,2h3v3a1,1,0,0,0,2,0V13h3a1,1,0,0,0,0-2Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Sulemani Ritual</h3>
+                        </div>
+                        <p class="text-lavender mb-4">An ancient ritual that harnesses celestial energies for protection, prosperity, and removing obstacles. Particularly effective for career and financial matters.</p>
+                        <div class="mt-auto pt-4">
+                            <a href="sulemani-ritual.html" class="inline-flex items-center bg-deepPurple hover:bg-opacity-80 text-white font-medium py-2 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                View Service Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Teevra High Energy Ritual -->
+                <div class="service-card rounded-xl overflow-hidden">
+                    <div class="p-6 flex flex-col h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gold bg-opacity-20 flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20ZM16.71,7.29a1,1,0,0,0-1.42,0L12,10.59,8.71,7.29A1,1,0,1,0,7.29,8.71L10.59,12l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l3.29,3.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L13.41,12l3.3-3.29A1,1,0,0,0,16.71,7.29Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Teevra Ritual</h3>
+                        </div>
+                        <p class="text-lavender mb-4">An intensive energy ritual for rapid transformation and manifestation. Addresses deep-rooted issues and creates powerful shifts in consciousness.</p>
+                        <div class="mt-auto pt-4">
+                            <a href="teevra-ritual.html" class="inline-flex items-center bg-deepPurple hover:bg-opacity-80 text-white font-medium py-2 px-4 rounded-lg transition duration-300">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                View Service Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 relative cosmic-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2">Client <span class="gold-text">Testimonials</span></h2>
+                <p class="text-lg text-lavender">Hear from those who've experienced transformation</p>
+                <div class="w-24 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+            
+            <div class="max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card p-6 rounded-xl">
+                        <div class="flex items-start mb-4">
+                            <div class="text-gold text-4xl mr-4">"</div>
+                            <p class="text-lavender italic">Saakshi's tarot reading was incredibly accurate. She tapped into issues I hadn't even mentioned and provided guidance that has truly changed my perspective. I'm so grateful!</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-deepPurple flex items-center justify-center mr-3">
+                                <span class="text-gold font-medium">P</span>
+                            </div>
+                            <div>
+                                <p class="font-medium">Priya M.</p>
+                                <div class="flex text-gold">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card p-6 rounded-xl">
+                        <div class="flex items-start mb-4">
+                            <div class="text-gold text-4xl mr-4">"</div>
+                            <p class="text-lavender italic">The Reiki healing session with Saakshi was deeply transformative. I felt a release of negative energy I'd been carrying for years. Her intuitive abilities are remarkable.</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-deepPurple flex items-center justify-center mr-3">
+                                <span class="text-gold font-medium">A</span>
+                            </div>
+                            <div>
+                                <p class="font-medium">Ankit S.</p>
+                                <div class="flex text-gold">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card p-6 rounded-xl">
+                        <div class="flex items-start mb-4">
+                            <div class="text-gold text-4xl mr-4">"</div>
+                            <p class="text-lavender italic">I was skeptical at first, but the candle spell Saakshi performed for my career brought amazing results within weeks. Her spiritual gifts are genuine and powerful.</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-deepPurple flex items-center justify-center mr-3">
+                                <span class="text-gold font-medium">R</span>
+                            </div>
+                            <div>
+                                <p class="font-medium">Rahul D.</p>
+                                <div class="flex text-gold">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-card p-6 rounded-xl">
+                        <div class="flex items-start mb-4">
+                            <div class="text-gold text-4xl mr-4">"</div>
+                            <p class="text-lavender italic">Saakshi's oracle reading provided the clarity I needed during a difficult time. Her compassionate approach and spot-on insights helped me make an important life decision.</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-deepPurple flex items-center justify-center mr-3">
+                                <span class="text-gold font-medium">N</span>
+                            </div>
+                            <div>
+                                <p class="font-medium">Neha K.</p>
+                                <div class="flex text-gold">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp CTA (Sticky) -->
+    <div class="fixed bottom-6 right-6 z-40">
+        <a href="https://wa.me/message/your-business-number" target="_blank" class="whatsapp-btn flex items-center bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-5 rounded-full shadow-lg transition duration-300">
+            <i class="fab fa-whatsapp text-2xl mr-2"></i>
+            <span class="hidden md:inline">Chat on WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-midnightBlue py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center justify-center md:justify-start">
+                        <div class="text-gold text-2xl mr-2">✨</div>
+                        <h2 class="text-xl font-semibold gold-text">Tarot Bliss by Saakshi</h2>
+                    </div>
+                    <p class="text-lavender mt-2 text-center md:text-left">Guiding souls to clarity, healing & purpose</p>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://www.instagram.com/tarotblissbysaakshi" target="_blank" class="text-white hover:text-gold transition">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-sm text-lavender text-center md:text-right">
+                        Spiritual services are for personal guidance and support.<br>
+                        Results may vary. © 2023 Tarot Bliss by Saakshi
+                    </p>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-white border-opacity-10">
+                <div class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-6">
+                    <a href="index.html" class="text-white hover:text-gold text-center">Home</a>
+                    <a href="about.html" class="text-white hover:text-gold text-center">About</a>
+                    <a href="services.html" class="text-white hover:text-gold text-center">Services</a>
+                    <a href="testimonials.html" class="text-white hover:text-gold text-center">Testimonials</a>
+                    <a href="contact.html" class="text-white hover:text-gold text-center">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Create stars for background
+        function createStars() {
+            const starBackground = document.getElementById('starBackground');
+            const numberOfStars = 100;
+            
+            for (let i = 0; i < numberOfStars; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                
+                // Random position
+                const left = Math.random() * 100;
+                const top = Math.random() * 100;
+                
+                // Random size
+                const size = Math.random() * 3;
+                
+                // Random delay for twinkling
+                const delay = Math.random() * 5;
+                
+                star.style.left = `${left}%`;
+                star.style.top = `${top}%`;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                star.style.animationDelay = `${delay}s`;
+                
+                starBackground.appendChild(star);
+            }
+        }
+        
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            createStars();
+            
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                
+                // Change icon
+                const icon = mobileMenuBtn.querySelector('i');
+                if (mobileMenu.classList.contains('hidden')) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                } else {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                }
+            });
+            
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    const icon = mobileMenuBtn.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'968fa318520d2e32',t:'MTc1NDE1OTMyOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

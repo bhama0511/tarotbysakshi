@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Saakshi | Tarot Bliss by Saakshi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lavender: '#E6E6FA',
+                        deepPurple: '#5D3FD3',
+                        midnightBlue: '#191970',
+                        gold: '#FFD700',
+                        softPurple: '#9370DB',
+                        mystic: '#8A2BE2',
+                        ethereal: '#BF55EC',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to bottom, #191970, #5D3FD3);
+            background-attachment: fixed;
+            color: #fff;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .gold-text {
+            color: #FFD700;
+        }
+        
+        .hero {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23191970'/%3E%3Cstop offset='1' stop-color='%235D3FD3'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff10' cx='12' cy='12' r='1'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)'/%3E%3C/svg%3E");
+            background-attachment: fixed;
+        }
+        
+        .star-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        .star {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            animation: twinkle 5s infinite;
+            opacity: 0.3;
+        }
+        
+        @keyframes twinkle {
+            0% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+            100% { opacity: 0.3; }
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .whatsapp-btn {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        
+        .cosmic-bg {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .mystical-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .crystal-pattern {
+            position: relative;
+        }
+        
+        .crystal-pattern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.3;
+            z-index: -1;
+        }
+        
+        .sacred-geometry {
+            position: relative;
+        }
+        
+        .sacred-geometry::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.07'%3E%3Cpath d='M50 0L0 50l50 50 50-50L50 0zm0 22.5L22.5 50 50 77.5 77.5 50 50 22.5z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.2;
+            z-index: -1;
+        }
+        
+        .timeline-container {
+            position: relative;
+        }
+        
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background: rgba(255, 215, 0, 0.3);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline-container::before {
+                left: 31px;
+            }
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        
+        .timeline-badge {
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 50%;
+            top: 25px;
+            margin-left: -8px;
+            background: #FFD700;
+            border-radius: 50%;
+            z-index: 10;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline-badge {
+                left: 31px;
+                margin-left: -8px;
+            }
+        }
+        
+        .timeline-panel {
+            width: 45%;
+            float: left;
+            border-radius: 15px;
+            padding: 20px;
+            position: relative;
+            background: rgba(93, 63, 211, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .timeline-panel::after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            right: -10px;
+            width: 20px;
+            height: 20px;
+            transform: rotate(45deg);
+            background: rgba(93, 63, 211, 0.2);
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .timeline-inverted .timeline-panel {
+            float: right;
+        }
+        
+        .timeline-inverted .timeline-panel::after {
+            left: -10px;
+            right: auto;
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-right: none;
+            border-top: none;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline-panel {
+                width: calc(100% - 80px);
+                float: right;
+            }
+            
+            .timeline-panel::after {
+                left: -10px;
+                right: auto;
+                border-left: 1px solid rgba(255, 255, 255, 0.1);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                border-right: none;
+                border-top: none;
+            }
+        }
+        
+        .skill-bar {
+            height: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #FFD700, #5D3FD3);
+            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: width 1s ease-in-out;
+        }
+        
+        .skill-percent {
+            position: absolute;
+            right: 10px;
+            top: -25px;
+            font-size: 14px;
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <!-- Star Background -->
+    <div class="star-bg" id="starBackground"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-midnightBlue bg-opacity-80 backdrop-blur-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="text-gold text-2xl mr-2">✨</div>
+                <a href="index.html" class="text-xl md:text-2xl font-semibold gold-text">Tarot Bliss</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="about.html" class="hidden md:block text-white hover:text-gold transition">About</a>
+                <a href="index.html#services" class="hidden md:block text-white hover:text-gold transition">Services</a>
+                <a href="index.html#testimonials" class="hidden md:block text-white hover:text-gold transition">Testimonials</a>
+                <a href="https://www.instagram.com/tarotblissbysaakshi" target="_blank" class="text-white hover:text-gold transition">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <button id="mobileMenuBtn" class="md:hidden text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-midnightBlue bg-opacity-95 w-full">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-2">
+                <a href="index.html#about" class="text-white hover:text-gold py-2 transition">About</a>
+                <a href="index.html#services" class="text-white hover:text-gold py-2 transition">Services</a>
+                <a href="index.html#testimonials" class="text-white hover:text-gold py-2 transition">Testimonials</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero min-h-[60vh] flex items-center relative pt-16 sacred-geometry">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                    About <span class="gold-text">Saakshi</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-lavender opacity-90">
+                    My Journey as a Spiritual Wellness Practitioner
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 md:py-24 relative crystal-pattern">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <!-- Personal Story -->
+                <div class="bg-deepPurple bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-xl border border-white border-opacity-10 p-6 md:p-10 mb-16">
+                    <div class="flex flex-col md:flex-row items-center md:items-start">
+                        <div class="md:w-1/3 mb-8 md:mb-0 md:mr-8">
+                            <div class="relative">
+                                <div class="absolute inset-0 bg-gold rounded-full opacity-20 blur-xl"></div>
+                                <div class="relative w-48 h-48 mx-auto rounded-full overflow-hidden border-2 border-gold">
+                                    <svg class="w-full h-full text-deepPurple" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="currentColor" d="M47.7,-57.2C59.9,-45.8,66.8,-29.1,68.9,-12.1C71,4.9,68.3,22.2,59.4,35.3C50.5,48.3,35.5,57.1,18.4,65.5C1.3,73.9,-17.8,81.9,-33.6,76.5C-49.4,71.1,-61.8,52.4,-67.4,33.8C-73,15.2,-71.7,-3.3,-65.4,-19.1C-59.1,-34.9,-47.8,-48,-34.6,-59.1C-21.4,-70.2,-6.3,-79.3,8.1,-78.1C22.5,-76.9,35.5,-68.5,47.7,-57.2Z" transform="translate(100 100)" />
+                                    </svg>
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <svg class="w-3/4 h-3/4 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8 text-center">
+                                <h3 class="text-xl font-semibold gold-text mb-2">Saakshi</h3>
+                                <p class="text-lavender">Spiritual Guide & Intuitive Healer</p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <h2 class="text-3xl font-bold mb-6">My <span class="gold-text">Spiritual Journey</span></h2>
+                            
+                            <p class="text-lg leading-relaxed mb-6">
+                                Namaste and welcome to my spiritual sanctuary. I'm Saakshi, a dedicated spiritual wellness practitioner with over a decade of experience in the mystical arts. My journey into the realm of spiritual guidance began when I was just a teenager, experiencing vivid dreams and intuitive insights that I couldn't explain.
+                            </p>
+                            
+                            <p class="text-lg leading-relaxed mb-6">
+                                What started as a personal quest for understanding evolved into a profound calling to help others navigate their spiritual paths. Through years of study, practice, and mentorship under revered spiritual teachers across India, I've developed a unique approach that blends ancient wisdom with modern understanding.
+                            </p>
+                            
+                            <p class="text-lg leading-relaxed">
+                                Today, I dedicate my life to helping souls find clarity, healing, and purpose through various spiritual practices including tarot reading, reiki healing, and energy work. Each session is approached with deep reverence for the divine connection we all share, and my greatest joy comes from witnessing the transformation in my clients as they discover their own inner light.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- My Approach -->
+                <div class="mb-16">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-2">My <span class="gold-text">Approach</span></h2>
+                        <div class="w-24 h-1 bg-gold mx-auto mt-4"></div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-deepPurple bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-xl border border-white border-opacity-10 p-6 text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 text-gold">
+                                <svg class="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM15 12C15 13.66 13.66 15 12 15C10.34 15 9 13.66 9 12C9 10.34 10.34 9 12 9C13.66 9 15 10.34 15 12Z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Intuitive Guidance</h3>
+                            <p class="text-lavender">
+                                I connect deeply with your energy to provide insights that resonate with your soul's journey. My readings go beyond surface-level predictions to reveal the deeper spiritual lessons and opportunities for growth.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-deepPurple bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-xl border border-white border-opacity-10 p-6 text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 text-gold">
+                                <svg class="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM16.41 7.41L10.41 13.41L7.59 10.59L6.17 12L10.41 16.24L17.83 8.82L16.41 7.41Z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Holistic Healing</h3>
+                            <p class="text-lavender">
+                                I believe true healing addresses the mind, body, and spirit as an interconnected whole. My practices are designed to restore balance and harmony to all aspects of your being, facilitating deep and lasting transformation.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-deepPurple bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-xl border border-white border-opacity-10 p-6 text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 text-gold">
+                                <svg class="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM12 17L11.09 16.09C8.61 13.61 7 12.11 7 10.2C7 8.71 8.21 7.5 9.7 7.5C10.61 7.5 11.49 7.99 12 8.7C12.51 7.99 13.39 7.5 14.3 7.5C15.79 7.5 17 8.71 17 10.2C17 12.11 15.39 13.61 12.91 16.09L12 17Z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Compassionate Support</h3>
+                            <p class="text-lavender">
+                                I create a safe, non-judgmental space for you to explore your spiritual questions and challenges. My guidance is offered with empathy and understanding, honoring your unique path and personal truth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Spiritual Journey Timeline -->
+                <div class="mb-16">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-2">My <span class="gold-text">Spiritual Timeline</span></h2>
+                        <div class="w-24 h-1 bg-gold mx-auto mt-4"></div>
+                    </div>
+                    
+                    <div class="timeline-container">
+                        <!-- Timeline Item 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-badge"></div>
+                            <div class="timeline-panel">
+                                <div class="mb-2">
+                                    <span class="gold-text font-semibold">2010</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Spiritual Awakening</h3>
+                                <p class="text-lavender">
+                                    Experienced my first profound spiritual awakening through meditation, which opened my intuitive abilities and set me on this path.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Item 2 -->
+                        <div class="timeline-item timeline-inverted">
+                            <div class="timeline-badge"></div>
+                            <div class="timeline-panel">
+                                <div class="mb-2">
+                                    <span class="gold-text font-semibold">2012</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Tarot Certification</h3>
+                                <p class="text-lavender">
+                                    Completed advanced training in tarot reading under a renowned spiritual teacher, developing my unique intuitive approach.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Item 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-badge"></div>
+                            <div class="timeline-panel">
+                                <div class="mb-2">
+                                    <span class="gold-text font-semibold">2014</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Reiki Master Certification</h3>
+                                <p class="text-lavender">
+                                    Attained Reiki Master level, allowing me to channel healing energy and train others in this powerful practice.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Item 4 -->
+                        <div class="timeline-item timeline-inverted">
+                            <div class="timeline-badge"></div>
+                            <div class="timeline-panel">
+                                <div class="mb-2">
+                                    <span class="gold-text font-semibold">2016</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Spiritual Retreat in Rishikesh</h3>
+                                <p class="text-lavender">
+                                    Spent six months in deep meditation and study at an ashram in Rishikesh, expanding my spiritual understanding and practices.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Item 5 -->
+                        <div class="timeline-item">
+                            <div class="timeline-badge"></div>
+                            <div class="timeline-panel">
+                                <div class="mb-2">
+                                    <span class="gold-text font-semibold">2018</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Launched Tarot Bliss</h3>
+                                <p class="text-lavender">
+                                    Founded Tarot Bliss to share my gifts with a wider audience, offering personalized spiritual guidance and healing.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Item 6 -->
+                        <div class="timeline-item timeline-inverted">
+                            <div class="timeline-badge"></div>
+                            <div class="timeline-panel">
+                                <div class="mb-2">
+                                    <span class="gold-text font-semibold">Present</span>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Continuing the Journey</h3>
+                                <p class="text-lavender">
+                                    Continuously expanding my spiritual practices and knowledge to better serve my clients on their unique paths to enlightenment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Spiritual Skills -->
+                <div class="mb-16">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-2">My <span class="gold-text">Spiritual Skills</span></h2>
+                        <div class="w-24 h-1 bg-gold mx-auto mt-4"></div>
+                    </div>
+                    
+                    <div class="bg-deepPurple bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-xl border border-white border-opacity-10 p-6 md:p-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="mb-8">
+                                    <div class="flex justify-between mb-2">
+                                        <h3 class="font-semibold">Tarot Reading</h3>
+                                        <span class="gold-text">98%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 98%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-8">
+                                    <div class="flex justify-between mb-2">
+                                        <h3 class="font-semibold">Reiki Healing</h3>
+                                        <span class="gold-text">95%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-8">
+                                    <div class="flex justify-between mb-2">
+                                        <h3 class="font-semibold">Energy Reading</h3>
+                                        <span class="gold-text">92%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="mb-8">
+                                    <div class="flex justify-between mb-2">
+                                        <h3 class="font-semibold">Oracle Card Reading</h3>
+                                        <span class="gold-text">96%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 96%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-8">
+                                    <div class="flex justify-between mb-2">
+                                        <h3 class="font-semibold">Candle Rituals</h3>
+                                        <span class="gold-text">94%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 94%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-8">
+                                    <div class="flex justify-between mb-2">
+                                        <h3 class="font-semibold">Spiritual Counseling</h3>
+                                        <span class="gold-text">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Philosophy -->
+                <div class="mb-16">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-2">My <span class="gold-text">Philosophy</span></h2>
+                        <div class="w-24 h-1 bg-gold mx-auto mt-4"></div>
+                    </div>
+                    
+                    <div class="bg-deepPurple bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-xl border border-white border-opacity-10 p-6 md:p-10">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/3 mb-8 md:mb-0 md:mr-8 flex justify-center">
+                                <div class="w-48 h-48 relative">
+                                    <div class="absolute inset-0 bg-gold rounded-full opacity-20 blur-xl"></div>
+                                    <div class="relative w-full h-full flex items-center justify-center">
+                                        <svg class="w-32 h-32 text-gold" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM12 11.39C11.56 11.39 11.11 11.29 10.71 11.11C10.31 10.92 9.95 10.65 9.67 10.33C9.39 10 9.19 9.61 9.08 9.19C8.98 8.77 8.97 8.34 9.05 7.91C9.13 7.49 9.31 7.09 9.56 6.74C9.82 6.39 10.15 6.1 10.52 5.89C10.9 5.67 11.32 5.54 11.75 5.49C12.18 5.45 12.61 5.5 13.02 5.64C13.43 5.78 13.8 6 14.12 6.29C14.44 6.58 14.7 6.93 14.88 7.33C15.06 7.73 15.15 8.16 15.15 8.59C15.15 9.17 15.01 9.75 14.73 10.25C14.45 10.76 14.05 11.19 13.56 11.49C13.08 11.79 12.52 11.96 11.95 11.97C11.97 11.97 12 11.39 12 11.39ZM16 16H8V14C8 12.9 8.9 12 10 12H14C15.1 12 16 12.9 16 14V16Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-2/3">
+                                <p class="text-lg leading-relaxed mb-6">
+                                    I believe that each soul is on a unique journey of growth and self-discovery. My role is not to predict a fixed future, but to illuminate the path ahead and empower you with the wisdom to make conscious choices.
+                                </p>
+                                
+                                <p class="text-lg leading-relaxed mb-6">
+                                    The universe speaks to us through symbols, synchronicities, and intuitive nudges. By learning to listen to these subtle messages, we can align with our highest purpose and create lives of meaning and fulfillment.
+                                </p>
+                                
+                                <p class="text-lg leading-relaxed">
+                                    True spiritual growth happens when we embrace both light and shadow aspects of ourselves with compassion. I guide my clients to recognize that challenges are opportunities for evolution, and that divine timing is always at work in our lives.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 relative sacred-geometry">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Begin Your <span class="gold-text">Spiritual Journey?</span></h2>
+                <p class="text-xl text-lavender mb-8">Let's connect and explore how I can support your path to clarity, healing, and purpose</p>
+                <a href="https://wa.me/918010575689?text=Hi%20Saakshi,%20I%20found%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20spiritual%20services." target="_blank" class="whatsapp-btn inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-medium py-4 px-8 rounded-full transition duration-300 text-lg">
+                    <i class="fab fa-whatsapp text-2xl mr-3"></i>
+                    Connect on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp CTA (Sticky) -->
+    <div class="fixed bottom-6 right-6 z-40">
+        <a href="https://wa.me/918010575689?text=Hi%20Saakshi,%20I%20found%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20spiritual%20services." target="_blank" class="whatsapp-btn flex items-center bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-5 rounded-full shadow-lg transition duration-300">
+            <i class="fab fa-whatsapp text-2xl mr-2"></i>
+            <span class="hidden md:inline">Chat on WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-midnightBlue py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center justify-center md:justify-start">
+                        <div class="text-gold text-2xl mr-2">✨</div>
+                        <h2 class="text-xl font-semibold gold-text">Tarot Bliss by Saakshi</h2>
+                    </div>
+                    <p class="text-lavender mt-2 text-center md:text-left">Guiding souls to clarity, healing & purpose</p>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://www.instagram.com/tarotblissbysaakshi" target="_blank" class="text-white hover:text-gold transition">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-sm text-lavender text-center md:text-right">
+                        These readings are for spiritual guidance.<br>
+                        Results may vary. © 2023 Tarot Bliss by Saakshi
+                    </p>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-white border-opacity-10">
+                <div class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-6">
+                    <a href="index.html" class="text-white hover:text-gold text-center">Home</a>
+                    <a href="index.html#about" class="text-white hover:text-gold text-center">About</a>
+                    <a href="index.html#services" class="text-white hover:text-gold text-center">Services</a>
+                    <a href="index.html#testimonials" class="text-white hover:text-gold text-center">Testimonials</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Create stars for background
+        function createStars() {
+            const starBackground = document.getElementById('starBackground');
+            const numberOfStars = 100;
+            
+            for (let i = 0; i < numberOfStars; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                
+                // Random position
+                const left = Math.random() * 100;
+                const top = Math.random() * 100;
+                
+                // Random size
+                const size = Math.random() * 3;
+                
+                // Random delay for twinkling
+                const delay = Math.random() * 5;
+                
+                star.style.left = `${left}%`;
+                star.style.top = `${top}%`;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                star.style.animationDelay = `${delay}s`;
+                
+                starBackground.appendChild(star);
+            }
+        }
+        
+        // Animate skill bars on scroll
+        function animateSkillBars() {
+            const skillBars = document.querySelectorAll('.skill-progress');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.width = entry.target.parentElement.dataset.percent;
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            skillBars.forEach(bar => {
+                const percent = bar.style.width;
+                bar.style.width = '0%';
+                bar.parentElement.dataset.percent = percent;
+                observer.observe(bar);
+            });
+        }
+        
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            createStars();
+            animateSkillBars();
+            
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                
+                // Change icon
+                const icon = mobileMenuBtn.querySelector('i');
+                if (mobileMenu.classList.contains('hidden')) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                } else {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                }
+            });
+            
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    const icon = mobileMenuBtn.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'968ff8abf0ab47ca',t:'MTc1NDE2MjgzMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
