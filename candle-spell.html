@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Candle Spells | Mystical Ritual Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#191970',
+                        deepPurple: '#5D3FD3',
+                        softPurple: '#9370DB',
+                        lavender: '#E6E6FA',
+                        gold: '#FFD700',
+                        mystic: '#8A2BE2',
+                        ethereal: '#BF55EC',
+                        crimson: '#DC143C',
+                        maroon: '#800000',
+                        emerald: '#50C878',
+                        amber: '#FFBF00',
+                        turquoise: '#40E0D0',
+                        coral: '#FF7F50',
+                        indigo: '#4B0082',
+                        rose: '#FF007F',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #191970;
+            color: #E6E6FA;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .glass-card {
+            background: rgba(93, 63, 211, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        
+        .spell-card {
+            transition: all 0.3s ease;
+            background: rgba(93, 63, 211, 0.15);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .spell-card:hover {
+            transform: translateY(-5px);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+        }
+        
+        .spell-card:hover .spell-icon {
+            transform: scale(1.1);
+        }
+        
+        .spell-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255, 215, 0, 0.5), transparent);
+            margin: 2.5rem 0;
+        }
+        
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .star {
+            position: absolute;
+            background-color: #ffffff;
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            opacity: 0;
+            animation: twinkle 5s infinite;
+        }
+        
+        @keyframes twinkle {
+            0% { opacity: 0; }
+            50% { opacity: 0.8; }
+            100% { opacity: 0; }
+        }
+        
+        .sacred-geometry {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.05;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%239370DB' fill-opacity='0.4'%3E%3Cpath d='M50 0L0 50l50 50 50-50L50 0zm0 22.5L22.5 50 50 77.5 77.5 50 50 22.5z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .cosmic-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.05;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%239370DB' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .glow-border {
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+        }
+        
+        .glow-text {
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        
+        .candle-container {
+            position: relative;
+            width: 180px;
+            height: 180px;
+            margin: 0 auto;
+        }
+        
+        .candle-glow {
+            filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
+            animation: glow-pulse 4s infinite alternate;
+        }
+        
+        @keyframes glow-pulse {
+            0% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
+            100% { filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.8)); }
+        }
+        
+        .energy-rays {
+            animation: ray-pulse 4s infinite alternate;
+            transform-origin: center;
+        }
+        
+        @keyframes ray-pulse {
+            0% { transform: scale(0.95); opacity: 0.7; }
+            100% { transform: scale(1.05); opacity: 1; }
+        }
+        
+        .flame {
+            animation: flicker 1.5s infinite alternate;
+            transform-origin: bottom center;
+        }
+        
+        @keyframes flicker {
+            0%, 100% { transform: scaleX(1) scaleY(1); opacity: 1; }
+            25% { transform: scaleX(0.95) scaleY(1.05); opacity: 0.9; }
+            50% { transform: scaleX(1.05) scaleY(0.95); opacity: 1; }
+            75% { transform: scaleX(0.98) scaleY(1.02); opacity: 0.95; }
+        }
+        
+        .ritual-flame {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(ellipse at bottom, #FFD700, #FF4500);
+            border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+            animation: flicker 1s infinite alternate;
+        }
+        
+        .ritual-flame::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 5px;
+            width: 10px;
+            height: 15px;
+            background: radial-gradient(ellipse at bottom, #FFD700, transparent);
+            border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+            transform: rotate(-20deg);
+            animation: flicker 0.8s infinite alternate;
+        }
+        
+        .ritual-flame::after {
+            content: '';
+            position: absolute;
+            top: -8px;
+            right: 5px;
+            width: 8px;
+            height: 12px;
+            background: radial-gradient(ellipse at bottom, #FFD700, transparent);
+            border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+            transform: rotate(20deg);
+            animation: flicker 1.2s infinite alternate;
+        }
+        
+        .spell-gradient-1 {
+            background: linear-gradient(135deg, rgba(255, 0, 127, 0.2), rgba(93, 63, 211, 0.15));
+        }
+        
+        .spell-gradient-2 {
+            background: linear-gradient(135deg, rgba(80, 200, 120, 0.2), rgba(93, 63, 211, 0.15));
+        }
+        
+        .spell-gradient-3 {
+            background: linear-gradient(135deg, rgba(255, 191, 0, 0.2), rgba(93, 63, 211, 0.15));
+        }
+        
+        .spell-gradient-4 {
+            background: linear-gradient(135deg, rgba(64, 224, 208, 0.2), rgba(93, 63, 211, 0.15));
+        }
+        
+        .spell-gradient-5 {
+            background: linear-gradient(135deg, rgba(255, 127, 80, 0.2), rgba(93, 63, 211, 0.15));
+        }
+        
+        .spell-gradient-6 {
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.2), rgba(93, 63, 211, 0.15));
+        }
+        
+        .spell-gradient-7 {
+            background: linear-gradient(135deg, rgba(220, 20, 60, 0.2), rgba(93, 63, 211, 0.15));
+        }
+        
+        .spell-gradient-8 {
+            background: linear-gradient(135deg, rgba(75, 0, 130, 0.2), rgba(93, 63, 211, 0.15));
+        }
+        
+        .spell-gradient-9 {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(93, 63, 211, 0.15));
+        }
+        
+        .spell-icon-container {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .spell-icon-bg-1 {
+            background: radial-gradient(circle, rgba(255, 0, 127, 0.3), rgba(255, 0, 127, 0.1));
+            box-shadow: 0 0 15px rgba(255, 0, 127, 0.3);
+        }
+        
+        .spell-icon-bg-2 {
+            background: radial-gradient(circle, rgba(80, 200, 120, 0.3), rgba(80, 200, 120, 0.1));
+            box-shadow: 0 0 15px rgba(80, 200, 120, 0.3);
+        }
+        
+        .spell-icon-bg-3 {
+            background: radial-gradient(circle, rgba(255, 191, 0, 0.3), rgba(255, 191, 0, 0.1));
+            box-shadow: 0 0 15px rgba(255, 191, 0, 0.3);
+        }
+        
+        .spell-icon-bg-4 {
+            background: radial-gradient(circle, rgba(64, 224, 208, 0.3), rgba(64, 224, 208, 0.1));
+            box-shadow: 0 0 15px rgba(64, 224, 208, 0.3);
+        }
+        
+        .spell-icon-bg-5 {
+            background: radial-gradient(circle, rgba(255, 127, 80, 0.3), rgba(255, 127, 80, 0.1));
+            box-shadow: 0 0 15px rgba(255, 127, 80, 0.3);
+        }
+        
+        .spell-icon-bg-6 {
+            background: radial-gradient(circle, rgba(138, 43, 226, 0.3), rgba(138, 43, 226, 0.1));
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+        }
+        
+        .spell-icon-bg-7 {
+            background: radial-gradient(circle, rgba(220, 20, 60, 0.3), rgba(220, 20, 60, 0.1));
+            box-shadow: 0 0 15px rgba(220, 20, 60, 0.3);
+        }
+        
+        .spell-icon-bg-8 {
+            background: radial-gradient(circle, rgba(75, 0, 130, 0.3), rgba(75, 0, 130, 0.1));
+            box-shadow: 0 0 15px rgba(75, 0, 130, 0.3);
+        }
+        
+        .spell-icon-bg-9 {
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.3), rgba(255, 215, 0, 0.1));
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+        }
+        
+        .spell-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .spell-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .spell-btn-1 {
+            background: linear-gradient(135deg, #FF007F, #8A2BE2);
+            box-shadow: 0 5px 15px rgba(255, 0, 127, 0.3);
+        }
+        
+        .spell-btn-2 {
+            background: linear-gradient(135deg, #50C878, #40E0D0);
+            box-shadow: 0 5px 15px rgba(80, 200, 120, 0.3);
+        }
+        
+        .spell-btn-3 {
+            background: linear-gradient(135deg, #FFBF00, #FF7F50);
+            box-shadow: 0 5px 15px rgba(255, 191, 0, 0.3);
+        }
+        
+        .spell-btn-4 {
+            background: linear-gradient(135deg, #40E0D0, #5D3FD3);
+            box-shadow: 0 5px 15px rgba(64, 224, 208, 0.3);
+        }
+        
+        .spell-btn-5 {
+            background: linear-gradient(135deg, #FF7F50, #DC143C);
+            box-shadow: 0 5px 15px rgba(255, 127, 80, 0.3);
+        }
+        
+        .spell-btn-6 {
+            background: linear-gradient(135deg, #8A2BE2, #4B0082);
+            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
+        }
+        
+        .spell-btn-7 {
+            background: linear-gradient(135deg, #DC143C, #FF007F);
+            box-shadow: 0 5px 15px rgba(220, 20, 60, 0.3);
+        }
+        
+        .spell-btn-8 {
+            background: linear-gradient(135deg, #4B0082, #8A2BE2);
+            box-shadow: 0 5px 15px rgba(75, 0, 130, 0.3);
+        }
+        
+        .spell-btn-9 {
+            background: linear-gradient(135deg, #FFD700, #FFBF00);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    <div class="sacred-geometry"></div>
+    
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <div class="mb-8">
+                <!-- Candle Icon -->
+                <div class="candle-container floating candle-glow">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Energy Rays -->
+                        <g class="energy-rays" fill="#FFD700" opacity="0.3">
+                            <path d="M100,20 L105,5 L100,10 L95,5 Z" />
+                            <path d="M140,40 L160,30 L145,45 L155,60 Z" />
+                            <path d="M160,100 L180,100 L170,105 L180,110 Z" />
+                            <path d="M140,160 L160,170 L145,155 L155,140 Z" />
+                            <path d="M100,180 L105,195 L100,190 L95,195 Z" />
+                            <path d="M60,160 L40,170 L55,155 L45,140 Z" />
+                            <path d="M40,100 L20,100 L30,105 L20,110 Z" />
+                            <path d="M60,40 L40,30 L55,45 L45,60 Z" />
+                        </g>
+                        
+                        <!-- Candle -->
+                        <rect x="85" y="80" width="30" height="80" fill="#F5F5F5" />
+                        <rect x="85" y="80" width="30" height="10" fill="#E6E6FA" />
+                        <rect x="85" y="150" width="30" height="10" rx="2" fill="#D3D3D3" />
+                        
+                        <!-- Wick -->
+                        <rect x="98" y="70" width="4" height="10" fill="#4A4A4A" />
+                        
+                        <!-- Flame -->
+                        <g class="flame">
+                            <path d="M100,40 C90,55 90,65 100,70 C110,65 110,55 100,40" fill="#FFD700" />
+                            <path d="M100,45 C95,55 95,62 100,67 C105,62 105,55 100,45" fill="#FF4500" opacity="0.8" />
+                        </g>
+                        
+                        <!-- Glow -->
+                        <circle cx="100" cy="55" r="25" fill="url(#flame-glow)" opacity="0.4" />
+                        
+                        <!-- Gradients -->
+                        <defs>
+                            <radialGradient id="flame-glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                                <stop offset="0%" stop-color="#FFD700" />
+                                <stop offset="100%" stop-color="transparent" />
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-2 text-gold glow-text">Sacred Candle Spells</h1>
+            <p class="text-xl text-lavender">Transformative Ritual Magic for Every Aspect of Life</p>
+        </header>
+        
+        <!-- Introduction -->
+        <div class="glass-card rounded-xl p-6 mb-8 relative overflow-hidden">
+            <div class="cosmic-pattern"></div>
+            <p class="text-lavender mb-6 text-center">
+                Our sacred candle spells harness the ancient power of flame to manifest your deepest desires. Each ritual is carefully crafted with pure intention and divine energy.
+            </p>
+            <p class="text-lavender mb-6 text-center font-medium">
+                Browse our collection of mystical candle rituals below and discover the perfect magical working for your specific needs.
+            </p>
+            
+            <div class="flex justify-center space-x-4 mb-4">
+                <div class="ritual-flame"></div>
+                <div class="ritual-flame"></div>
+                <div class="ritual-flame"></div>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <!-- Spell Categories -->
+        <div class="mb-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-gold mb-8 text-center glow-text">Our Mystical Candle Spells</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 1. Love & Relationships Spell -->
+                <div class="spell-card rounded-xl p-6 relative overflow-hidden spell-gradient-1">
+                    <div class="sacred-geometry"></div>
+                    
+                    <div class="spell-icon-container spell-icon-bg-1 mb-6">
+                        <span class="spell-icon text-5xl">❤️</span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gold mb-3 text-center">Love & Relationships</h3>
+                    
+                    <p class="text-lavender mb-6 text-center">
+                        Attract true love, deepen bonds, reconcile with partners, and create harmonious relationships with our powerful love spells.
+                    </p>
+                    
+                    <div class="text-center">
+                        <a href="candlespell/love-relationships.html" class="spell-btn spell-btn-1 text-white py-3 px-6 rounded-lg inline-flex items-center justify-center">
+                            <span>Explore Love Spells</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 2. Career & Finance Spell -->
+                <div class="spell-card rounded-xl p-6 relative overflow-hidden spell-gradient-2">
+                    <div class="sacred-geometry"></div>
+                    
+                    <div class="spell-icon-container spell-icon-bg-2 mb-6">
+                        <span class="spell-icon text-5xl">💼</span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gold mb-3 text-center">Career & Finance</h3>
+                    
+                    <p class="text-lavender mb-6 text-center">
+                        Manifest professional success, attract abundance, overcome financial obstacles, and create prosperity in all areas of life.
+                    </p>
+                    
+                    <div class="text-center">
+                        <a href="candlespell/career-finance.html" class="spell-btn spell-btn-2 text-white py-3 px-6 rounded-lg inline-flex items-center justify-center">
+                            <span>Explore Career Spells</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 3. Spirit Nitika Money Spell -->
+                <div class="spell-card rounded-xl p-6 relative overflow-hidden spell-gradient-3">
+                    <div class="sacred-geometry"></div>
+                    
+                    <div class="spell-icon-container spell-icon-bg-3 mb-6">
+                        <span class="spell-icon text-5xl">💰</span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gold mb-3 text-center">Spirit Nitika Money</h3>
+                    
+                    <p class="text-lavender mb-6 text-center">
+                        Connect with the powerful Spirit Nitika to manifest rapid financial abundance, unexpected windfalls, and lasting prosperity.
+                    </p>
+                    
+                    <div class="text-center">
+                        <a href="candlespell/spirit-nitika-money.html" class="spell-btn spell-btn-3 text-white py-3 px-6 rounded-lg inline-flex items-center justify-center">
+                            <span>Explore Nitika Spells</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 4. Wish Fulfilment Spell -->
+                <div class="spell-card rounded-xl p-6 relative overflow-hidden spell-gradient-4">
+                    <div class="sacred-geometry"></div>
+                    
+                    <div class="spell-icon-container spell-icon-bg-4 mb-6">
+                        <span class="spell-icon text-5xl">✨</span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gold mb-3 text-center">Wish Fulfilment</h3>
+                    
+                    <p class="text-lavender mb-6 text-center">
+                        Manifest your deepest desires and dreams with our powerful wish fulfillment rituals designed to align cosmic energies with your intentions.
+                    </p>
+                    
+                    <div class="text-center">
+                        <a href="candlespell/wish-fulfilment.html" class="spell-btn spell-btn-4 text-white py-3 px-6 rounded-lg inline-flex items-center justify-center">
+                            <span>Explore Wish Spells</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 5. Sant Expedite Spell -->
+                <div class="spell-card rounded-xl p-6 relative overflow-hidden spell-gradient-5">
+                    <div class="sacred-geometry"></div>
+                    
+                    <div class="spell-icon-container spell-icon-bg-5 mb-6">
+                        <span class="spell-icon text-5xl">⚡</span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gold mb-3 text-center">Sant Expedite</h3>
+                    
+                    <p class="text-lavender mb-6 text-center">
+                        Work with the powerful Saint of Urgent Matters to manifest rapid results, overcome delays, and achieve immediate breakthroughs.
+                    </p>
+                    
+                    <div class="text-center">
+                        <a href="candlespell/sant-expedite.html" class="spell-btn spell-btn-5 text-white py-3 px-6 rounded-lg inline-flex items-center justify-center">
+                            <span>Explore Expedite Spells</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 6. Cleansing & Protection Spell -->
+                <div class="spell-card rounded-xl p-6 relative overflow-hidden spell-gradient-6">
+                    <div class="sacred-geometry"></div>
+                    
+                    <div class="spell-icon-container spell-icon-bg-6 mb-6">
+                        <span class="spell-icon text-5xl">🛡️</span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gold mb-3 text-center">Cleansing & Protection</h3>
+                    
+                    <p class="text-lavender mb-6 text-center">
+                        Banish negative energies, shield yourself from harm, remove curses, and create powerful spiritual protection for you and your loved ones.
+                    </p>
+                    
+                    <div class="text-center">
+                        <a href="candlespell/cleansing-protection.html" class="spell-btn spell-btn-6 text-white py-3 px-6 rounded-lg inline-flex items-center justify-center">
+                            <span>Explore Protection Spells</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 7. Self Love & Healing Spell -->
+                <div class="spell-card rounded-xl p-6 relative overflow-hidden spell-gradient-7">
+                    <div class="sacred-geometry"></div>
+                    
+                    <div class="spell-icon-container spell-icon-bg-7 mb-6">
+                        <span class="spell-icon text-5xl">🌹</span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gold mb-3 text-center">Self Love & Healing</h3>
+                    
+                    <p class="text-lavender mb-6 text-center">
+                        Nurture your inner light, heal emotional wounds, boost confidence, and cultivate deep self-love with our transformative rituals.
+                    </p>
+                    
+                    <div class="text-center">
+                        <a href="candlespell/self-love-healing.html" class="spell-btn spell-btn-7 text-white py-3 px-6 rounded-lg inline-flex items-center justify-center">
+                            <span>Explore Healing Spells</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 8. Spiritual & Energy Spell -->
+                <div class="spell-card rounded-xl p-6 relative overflow-hidden spell-gradient-8">
+                    <div class="sacred-geometry"></div>
+                    
+                    <div class="spell-icon-container spell-icon-bg-8 mb-6">
+                        <span class="spell-icon text-5xl">🔮</span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gold mb-3 text-center">Spiritual & Energy</h3>
+                    
+                    <p class="text-lavender mb-6 text-center">
+                        Enhance psychic abilities, deepen spiritual connections, open your third eye, and elevate your consciousness to higher realms.
+                    </p>
+                    
+                    <div class="text-center">
+                        <a href="candlespell/spiritual-energy.html" class="spell-btn spell-btn-8 text-white py-3 px-6 rounded-lg inline-flex items-center justify-center">
+                            <span>Explore Spiritual Spells</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 9. Other Popular Spells -->
+                <div class="spell-card rounded-xl p-6 relative overflow-hidden spell-gradient-9">
+                    <div class="sacred-geometry"></div>
+                    
+                    <div class="spell-icon-container spell-icon-bg-9 mb-6">
+                        <span class="spell-icon text-5xl">✨</span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gold mb-3 text-center">Other Popular Spells</h3>
+                    
+                    <p class="text-lavender mb-6 text-center">
+                        Discover our collection of specialized rituals for unique situations, including court cases, beauty enhancement, and more.
+                    </p>
+                    
+                    <div class="text-center">
+                        <a href="candlespell/other-popular-spells.html" class="spell-btn spell-btn-9 text-white py-3 px-6 rounded-lg inline-flex items-center justify-center">
+                            <span>Explore More Spells</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <!-- Why Choose Our Candle Spells -->
+        <div class="mb-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-gold mb-6 text-center glow-text">Why Choose Our Sacred Candle Spells</h2>
+            
+            <div class="glass-card rounded-xl p-6 relative overflow-hidden">
+                <div class="sacred-geometry"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-deepPurple flex items-center justify-center text-gold">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gold">Authentic Rituals</h3>
+                            <p class="mt-1 text-lavender">Each spell is performed with genuine magical practices rooted in ancient traditions and powerful energetic principles.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-deepPurple flex items-center justify-center text-gold">
+                            <i class="fas fa-hands-praying"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gold">Pure Intention</h3>
+                            <p class="mt-1 text-lavender">We work only with positive energy and pure intentions, ensuring that all spells are ethical and harm none.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-deepPurple flex items-center justify-center text-gold">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gold">Astrologically Timed</h3>
+                            <p class="mt-1 text-lavender">Rituals are performed during optimal astrological alignments to maximize their effectiveness and manifestation power.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 h-10 w-10 rounded-full bg-deepPurple flex items-center justify-center text-gold">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gold">Premium Materials</h3>
+                            <p class="mt-1 text-lavender">We use only the finest ritual ingredients, including hand-selected herbs, oils, and crystals charged with specific energies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Testimonials -->
+        <div class="mb-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-gold mb-6 text-center glow-text">Magical Transformations</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="spell-card p-5 rounded-xl">
+                    <div class="flex flex-col">
+                        <div class="flex mb-3">
+                            <span class="text-gold">★★★★★</span>
+                        </div>
+                        <p class="text-lavender italic mb-4">"The love spell worked beyond my expectations. After years of being single, I met my soulmate just two weeks after the ritual was performed. The connection was instant and magical."</p>
+                        <p class="text-gold font-medium">- Priya M.</p>
+                    </div>
+                </div>
+                
+                <div class="spell-card p-5 rounded-xl">
+                    <div class="flex flex-col">
+                        <div class="flex mb-3">
+                            <span class="text-gold">★★★★★</span>
+                        </div>
+                        <p class="text-lavender italic mb-4">"I was struggling financially for months. After the Spirit Nitika Money Spell, I received an unexpected job offer with double my previous salary. The timing was too perfect to be coincidence."</p>
+                        <p class="text-gold font-medium">- Rahul K.</p>
+                    </div>
+                </div>
+                
+                <div class="spell-card p-5 rounded-xl">
+                    <div class="flex flex-col">
+                        <div class="flex mb-3">
+                            <span class="text-gold">★★★★★</span>
+                        </div>
+                        <p class="text-lavender italic mb-4">"The protection spell created a noticeable shift in my home's energy. The constant arguments stopped, and there's now a peaceful atmosphere that everyone who visits can feel."</p>
+                        <p class="text-gold font-medium">- Anjali S.</p>
+                    </div>
+                </div>
+                
+                <div class="spell-card p-5 rounded-xl">
+                    <div class="flex flex-col">
+                        <div class="flex mb-3">
+                            <span class="text-gold">★★★★★</span>
+                        </div>
+                        <p class="text-lavender italic mb-4">"I had a court case that was dragging on for years. After the Sant Expedite spell, it was resolved in my favor within just 10 days. I'm still in awe of how quickly things turned around."</p>
+                        <p class="text-gold font-medium">- Vikram J.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CTA -->
+        <div class="mb-8">
+            <div class="glass-card rounded-xl p-6 relative overflow-hidden text-center">
+                <div class="cosmic-pattern"></div>
+                
+                <h2 class="text-2xl font-bold text-gold mb-4">Ready to Transform Your Life?</h2>
+                <p class="text-lavender mb-6">Discover the perfect candle spell ritual to manifest your desires and create positive change.</p>
+                
+                <a href="https://wa.me/918010575689?text=Hi,%20I'm%20interested%20in%20learning%20more%20about%20your%20candle%20spells" target="_blank" class="whatsapp-btn bg-green-600 hover:bg-green-700 text-white py-3 px-8 rounded-full inline-flex items-center justify-center shadow-lg">
+                    <i class="fab fa-whatsapp text-xl mr-2"></i>
+                    Discuss Your Needs
+                </a>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="mt-12 text-center">
+            <div class="mb-8">
+                <svg class="mx-auto w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.3" />
+                    <circle cx="50" cy="50" r="30" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.5" />
+                    <circle cx="50" cy="50" r="20" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.7" />
+                    <text x="50" y="55" text-anchor="middle" fill="#FFD700" font-family="serif" font-size="12">ॐ</text>
+                </svg>
+            </div>
+            
+            <p class="text-sm text-lavender mt-6 opacity-70">
+                All candle spells are performed with pure intentions for positive outcomes only. Results may vary based on individual circumstances and divine timing.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Create twinkling stars
+        document.addEventListener('DOMContentLoaded', function() {
+            const starsContainer = document.getElementById('stars');
+            const starsCount = 100;
+            
+            for (let i = 0; i < starsCount; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                
+                // Random position
+                const left = Math.random() * 100;
+                const top = Math.random() * 100;
+                
+                star.style.left = `${left}%`;
+                star.style.top = `${top}%`;
+                
+                // Random animation delay
+                star.style.animationDelay = `${Math.random() * 5}s`;
+                
+                starsContainer.appendChild(star);
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96958af8f67cff99',t:'MTc1NDIyMTI1NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
