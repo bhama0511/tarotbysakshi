@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Expedite Ritual | Sacred Candle Magic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        deepPurple: '#5D3FD3',
+                        softPurple: '#9370DB',
+                        lavender: '#E6E6FA',
+                        gold: '#FFD700',
+                        mystic: '#8A2BE2',
+                        ethereal: '#BF55EC',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 25%, #0f3460 50%, #533483 75%, #8A2BE2 100%);
+            color: #E6E6FA;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .glass-card {
+            background: rgba(93, 63, 211, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        
+        .ritual-card {
+            transition: all 0.4s ease;
+            background: rgba(147, 112, 219, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .ritual-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border: 1px solid rgba(255, 215, 0, 0.5);
+            box-shadow: 0 20px 50px rgba(93, 63, 211, 0.3);
+        }
+        
+        .whatsapp-btn {
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            min-height: 48px;
+            touch-action: manipulation;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+        
+        .expedite-btn {
+            background: linear-gradient(135deg, #5D3FD3, #9370DB);
+            transition: all 0.3s ease;
+            min-height: 48px;
+            touch-action: manipulation;
+        }
+        
+        .expedite-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(93, 63, 211, 0.4);
+        }
+        
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .twinkle-star {
+            position: absolute;
+            background-color: #FFD700;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            opacity: 0;
+            animation: twinkle 3s infinite;
+        }
+        
+        @keyframes twinkle {
+            0% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1.5); }
+            100% { opacity: 0; transform: scale(0.5); }
+        }
+        
+        .sacred-geometry {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%23FFD700' fill-opacity='0.3'%3E%3Cpath d='M100 20 L120 80 L180 80 L135 115 L155 175 L100 140 L45 175 L65 115 L20 80 L80 80 Z' stroke='%23FFD700' stroke-width='2'/%3E%3Ccircle cx='100' cy='100' r='60' fill='none' stroke='%23FFD700' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .glow-text {
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+        }
+        
+        .saint-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 768px) {
+            .saint-container {
+                width: 250px;
+                height: 250px;
+            }
+        }
+        
+        .saint-glow {
+            filter: drop-shadow(0 0 25px rgba(255, 215, 0, 0.8));
+            animation: saint-pulse 4s infinite alternate;
+        }
+        
+        @keyframes saint-pulse {
+            0% { filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.6)); }
+            100% { filter: drop-shadow(0 0 30px rgba(255, 215, 0, 1)); }
+        }
+        
+        .divine-energy {
+            animation: divine-rotation 15s linear infinite;
+            transform-origin: center;
+        }
+        
+        @keyframes divine-rotation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .lightning-flash {
+            animation: lightning 2s ease-in-out infinite;
+        }
+        
+        @keyframes lightning {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
+        }
+        
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, rgba(255, 215, 0, 0.6), transparent);
+            margin: 3rem 0;
+            position: relative;
+        }
+        
+        .section-divider::before {
+            content: '⚡';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #1a1a2e, #533483);
+            padding: 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        .ritual-price {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(147, 112, 219, 0.1));
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 8px;
+            padding: 10px 16px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        
+        @media (min-width: 640px) {
+            .feature-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        
+        @media (min-width: 640px) {
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .ritual-options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .ritual-options-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .process-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .process-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        /* Mobile optimizations */
+        @media (max-width: 640px) {
+            .ritual-card {
+                padding: 1rem;
+            }
+            
+            .glass-card {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .whatsapp-btn, .expedite-btn {
+                width: 100%;
+                justify-content: center;
+                padding: 0.75rem 1rem;
+            }
+        }
+        
+        /* Touch-friendly interactions */
+        @media (hover: none) and (pointer: coarse) {
+            .ritual-card:hover {
+                transform: none;
+                border: 1px solid rgba(255, 215, 0, 0.1);
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            }
+            
+            .whatsapp-btn:hover,
+            .expedite-btn:hover {
+                transform: none;
+                box-shadow: none;
+            }
+        }
+        
+        /* Reduced motion for accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            .floating,
+            .saint-glow,
+            .divine-energy,
+            .lightning-flash,
+            .twinkle {
+                animation: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    <div class="sacred-geometry"></div>
+    
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <div class="mb-8">
+                <!-- Saint Expedite Icon -->
+                <div class="saint-container floating saint-glow">
+                    <svg viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer Divine Ring -->
+                        <g class="lightning-flash" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.8">
+                            <circle cx="125" cy="125" r="115" />
+                            <circle cx="125" cy="125" r="100" />
+                        </g>
+                        
+                        <!-- Divine Energy Circle -->
+                        <g class="divine-energy">
+                            <!-- Saint Expedite Figure -->
+                            <g transform="translate(125, 125)">
+                                <!-- Divine Halo -->
+                                <circle cx="0" cy="-35" r="20" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.9" />
+                                
+                                <!-- Head -->
+                                <circle cx="0" cy="-35" r="12" fill="#E6E6FA" opacity="0.9" />
+                                
+                                <!-- Body -->
+                                <ellipse cx="0" cy="-5" rx="15" ry="25" fill="#9370DB" opacity="0.8" />
+                                
+                                <!-- Arms -->
+                                <path d="M-15,-20 Q-25,-15 -22,-5" stroke="#E6E6FA" stroke-width="3" fill="none" opacity="0.9" />
+                                <path d="M15,-20 Q25,-15 22,-5" stroke="#E6E6FA" stroke-width="3" fill="none" opacity="0.9" />
+                                
+                                <!-- Cross in hand -->
+                                <g transform="translate(22, -10)">
+                                    <path d="M0,-6 L0,6 M-3,0 L3,0" stroke="#FFD700" stroke-width="2" opacity="0.9" />
+                                </g>
+                                
+                                <!-- Divine Light Rays -->
+                                <g fill="#FFD700" opacity="0.7">
+                                    <path d="M0,-60 L2,-65 L0,-55 L-2,-65 Z" />
+                                    <path d="M42,-42 L49,-49 L39,-39 L46,-46 Z" />
+                                    <path d="M60,0 L65,-2 L55,0 L65,2 Z" />
+                                    <path d="M42,42 L49,49 L39,39 L46,46 Z" />
+                                    <path d="M0,60 L2,65 L0,55 L-2,65 Z" />
+                                    <path d="M-42,42 L-49,49 L-39,39 L-46,46 Z" />
+                                    <path d="M-60,0 L-65,2 L-55,0 L-65,-2 Z" />
+                                    <path d="M-42,-42 L-49,-49 L-39,-39 L-46,-46 Z" />
+                                </g>
+                                
+                                <!-- Urgency Symbols */
+                                <text x="-35" y="-10" font-size="8" fill="#FFD700" opacity="0.8">HODIE</text>
+                                <text x="10" y="-10" font-size="8" fill="#FFD700" opacity="0.8">TODAY</text>
+                            </g>
+                            
+                            <!-- Lightning Bolts -->
+                            <g class="lightning-flash" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.9">
+                                <path d="M80,80 L90,60 L85,70 L95,50" />
+                                <path d="M170,80 L160,60 L165,70 L155,50" />
+                                <path d="M80,170 L90,190 L85,180 L95,200" />
+                                <path d="M170,170 L160,190 L165,180 L155,200" />
+                            </g>
+                        </g>
+                        
+                        <!-- Sacred Geometry Pattern -->
+                        <g fill="none" stroke="#9370DB" stroke-width="1" opacity="0.4">
+                            <polygon points="125,40 145,90 195,90 160,120 170,170 125,145 80,170 90,120 55,90 105,90" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gold glow-text">Saint Expedite Ritual</h1>
+            <p class="text-xl md:text-2xl text-lavender">⚡🙏 Miraculous Intercession for Urgent Solutions 🙏⚡</p>
+            <div class="mt-6 text-center">
+                <span class="inline-block bg-deepPurple bg-opacity-20 text-gold px-6 py-3 rounded-full text-sm md:text-base font-bold border border-gold border-opacity-30">
+                    🚨 FAST RESULTS WHEN YOU CAN'T WAIT 🚨
+                </span>
+            </div>
+        </header>
+        
+        <!-- Introduction -->
+        <div class="glass-card rounded-xl p-6 md:p-8 mb-8 relative overflow-hidden">
+            <div class="sacred-geometry"></div>
+            <div class="text-center">
+                <p class="text-lavender mb-6 text-lg md:text-xl leading-relaxed">
+                    Call upon the miraculous intercession of Saint Expedite, the patron of urgent and speedy solutions, to bring fast results when you can't afford to wait.
+                </p>
+                
+                <div class="feature-grid text-center">
+                    <div class="glass-card rounded-lg p-4">
+                        <span class="text-3xl mb-3 block">⚡</span>
+                        <span class="text-lavender text-sm">Urgent Results</span>
+                    </div>
+                    <div class="glass-card rounded-lg p-4">
+                        <span class="text-3xl mb-3 block">🏃</span>
+                        <span class="text-lavender text-sm">Fast Solutions</span>
+                    </div>
+                    <div class="glass-card rounded-lg p-4">
+                        <span class="text-3xl mb-3 block">🙏</span>
+                        <span class="text-lavender text-sm">Divine Help</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <!-- Why This Ritual is Done -->
+        <div class="mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-8 text-center glow-text">Why This Ritual is Done ⚡</h2>
+            
+            <div class="glass-card rounded-xl p-6 md:p-8 relative overflow-hidden text-center">
+                <div class="sacred-geometry"></div>
+                <div class="inline-block p-4 rounded-full bg-deepPurple bg-opacity-20 mb-4">
+                    <span class="text-4xl">🚨</span>
+                </div>
+                <h3 class="text-2xl font-bold text-gold mb-4">Urgent Divine Intervention</h3>
+                <p class="text-lavender text-lg md:text-xl leading-relaxed">
+                    To get fast help, urgent results, and quick solutions when you're stuck or facing delays that require immediate divine intervention.
+                </p>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <!-- What It Helps With -->
+        <div class="mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-8 text-center glow-text">What It Helps With 🎯</h2>
+            
+            <div class="benefits-grid">
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <span class="text-gold text-2xl mr-4">💰</span>
+                        <span class="text-lavender text-lg">Urgent money needs</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-gold text-2xl mr-4">💼</span>
+                        <span class="text-lavender text-lg">Job or career problems</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-gold text-2xl mr-4">📚</span>
+                        <span class="text-lavender text-lg">Exam success</span>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <span class="text-gold text-2xl mr-4">⚖️</span>
+                        <span class="text-lavender text-lg">Delayed court or legal matters</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-gold text-2xl mr-4">💕</span>
+                        <span class="text-lavender text-lg">Love-related wish fulfilment</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-gold text-2xl mr-4">⭐</span>
+                        <span class="text-lavender text-lg">Fast manifestation of any wish</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <!-- Ritual Options -->
+        <div class="mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-8 text-center glow-text">Energy Exchange ⏰</h2>
+            
+            <div class="ritual-options-grid">
+                <!-- 1 Day Ritual -->
+                <div class="ritual-card rounded-xl p-6 relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="text-center">
+                        <div class="inline-block p-3 rounded-full bg-deepPurple bg-opacity-20 mb-4">
+                            <span class="text-3xl">⚡</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-gold mb-3">1 Day Ritual</h3>
+                        <p class="text-lavender mb-4 leading-relaxed">
+                            Quick divine intervention for immediate urgent needs and fast solutions.
+                        </p>
+                        <div class="ritual-price">
+                            <span class="text-gold font-bold text-lg">₹777</span>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="https://wa.me/918010575689?text=Hi,%20I%20need%20the%201-Day%20Saint%20Expedite%20Ritual%20for%20₹777%20for%20urgent%20help" target="_blank" class="expedite-btn text-white py-3 px-6 rounded-lg inline-flex items-center justify-center w-full">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                Book 1-Day Ritual
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 7 Days Ritual -->
+                <div class="ritual-card rounded-xl p-6 relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="absolute top-3 right-3 bg-softPurple text-white text-xs px-2 py-1 rounded-full">
+                        Recommended
+                    </div>
+                    <div class="text-center">
+                        <div class="inline-block p-3 rounded-full bg-softPurple bg-opacity-20 mb-4">
+                            <span class="text-3xl">🔥</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-gold mb-3">7 Days Ritual</h3>
+                        <p class="text-lavender mb-4 leading-relaxed">
+                            Sustained divine intervention for stronger and more lasting urgent results.
+                        </p>
+                        <div class="ritual-price">
+                            <span class="text-gold font-bold text-lg">₹4,444</span>
+                            <span class="text-lavender text-sm ml-2">(Recommended)</span>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="https://wa.me/918010575689?text=Hi,%20I%20want%20the%207-Day%20Saint%20Expedite%20Ritual%20for%20₹4,444%20(Recommended)" target="_blank" class="expedite-btn text-white py-3 px-6 rounded-lg inline-flex items-center justify-center w-full">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                Book 7-Day Ritual
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 9 Days Novena -->
+                <div class="ritual-card rounded-xl p-6 relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="absolute top-3 right-3 bg-gold text-black text-xs px-2 py-1 rounded-full font-bold">
+                        Highly Recommended
+                    </div>
+                    <div class="text-center">
+                        <div class="inline-block p-3 rounded-full bg-gold bg-opacity-20 mb-4">
+                            <span class="text-3xl">👑</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-gold mb-3">9 Days (Novena)</h3>
+                        <p class="text-lavender mb-4 leading-relaxed">
+                            Complete novena for maximum divine power and miraculous urgent interventions.
+                        </p>
+                        <div class="ritual-price">
+                            <span class="text-gold font-bold text-lg">₹5,777</span>
+                            <span class="text-lavender text-sm ml-2">(Highly Recommended)</span>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="https://wa.me/918010575689?text=Hi,%20I%20want%20the%209-Day%20Saint%20Expedite%20Novena%20for%20₹5,777%20(Highly%20Recommended)" target="_blank" class="expedite-btn text-white py-3 px-6 rounded-lg inline-flex items-center justify-center w-full">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                Book 9-Day Novena
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <!-- Ritual Timing -->
+        <div class="mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-8 text-center glow-text">Ritual Timing 📅</h2>
+            
+            <div class="glass-card rounded-xl p-6 md:p-8 relative overflow-hidden">
+                <div class="sacred-geometry"></div>
+                <div class="benefits-grid">
+                    <div class="text-center">
+                        <div class="inline-block p-4 rounded-full bg-softPurple bg-opacity-20 mb-4">
+                            <span class="text-3xl">📅</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gold mb-3">Best Days</h3>
+                        <p class="text-lavender">
+                            Traditionally performed or started on <strong>Wednesdays</strong> for maximum divine effect and fastest results.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="inline-block p-4 rounded-full bg-softPurple bg-opacity-20 mb-4">
+                            <span class="text-3xl">🚨</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gold mb-3">Urgent Needs</h3>
+                        <p class="text-lavender">
+                            Can also be performed on <strong>any day</strong> in case of urgent client needs requiring immediate intervention.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- How Saint Expedite Works -->
+        <div class="mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-8 text-center glow-text">How Saint Expedite Works 🌟</h2>
+            
+            <div class="process-grid">
+                <div class="ritual-card rounded-xl p-6 text-center relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="inline-block p-4 rounded-full bg-deepPurple bg-opacity-30 mb-4">
+                        <span class="text-3xl">🙏</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gold mb-3">1. Urgent Prayer</h3>
+                    <p class="text-lavender">Immediate invocation of Saint Expedite for your urgent needs and time-sensitive situations</p>
+                </div>
+                
+                <div class="ritual-card rounded-xl p-6 text-center relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="inline-block p-4 rounded-full bg-deepPurple bg-opacity-30 mb-4">
+                        <span class="text-3xl">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gold mb-3">2. Divine Speed</h3>
+                    <p class="text-lavender">Saint Expedite accelerates divine intervention to bring swift solutions and fast results</p>
+                </div>
+                
+                <div class="ritual-card rounded-xl p-6 text-center relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="inline-block p-4 rounded-full bg-deepPurple bg-opacity-30 mb-4">
+                        <span class="text-3xl">🎯</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gold mb-3">3. Rapid Manifestation</h3>
+                    <p class="text-lavender">Your urgent requests manifest quickly through Saint Expedite's powerful intercession</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <!-- CTA -->
+        <div class="mb-8">
+            <div class="glass-card rounded-xl p-6 md:p-8 relative overflow-hidden text-center">
+                <div class="sacred-geometry"></div>
+                
+                <h2 class="text-2xl md:text-3xl font-bold text-gold mb-4">Need Urgent Divine Help?</h2>
+                <p class="text-lavender mb-6 text-lg leading-relaxed">
+                    💌 <strong>Note:</strong> The 7-day and 9-day versions are recommended for stronger, long-lasting results. All rituals are performed with devotion, pure energy, and complete confidentiality.
+                </p>
+                
+                <a href="https://wa.me/918010575689?text=Hi,%20I%20need%20urgent%20help%20from%20Saint%20Expedite.%20Please%20help%20me%20choose%20the%20right%20ritual%20option" target="_blank" class="whatsapp-btn text-white py-4 px-8 rounded-full inline-flex items-center justify-center shadow-lg text-lg font-bold">
+                    <i class="fab fa-whatsapp text-xl mr-3"></i>
+                    Get Urgent Divine Help Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create twinkling stars
+            const starsContainer = document.getElementById('stars');
+            const isMobile = window.innerWidth < 768;
+            const starsCount = isMobile ? 30 : 50;
+            
+            for (let i = 0; i < starsCount; i++) {
+                const star = document.createElement('div');
+                star.classList.add('twinkle-star');
+                
+                // Random position
+                const left = Math.random() * 100;
+                const top = Math.random() * 100;
+                
+                star.style.left = `${left}%`;
+                star.style.top = `${top}%`;
+                
+                // Random animation delay
+                star.style.animationDelay = `${Math.random() * 3}s`;
+                
+                starsContainer.appendChild(star);
+            }
+            
+            // Touch feedback for mobile
+            if ('ontouchstart' in window) {
+                const cards = document.querySelectorAll('.ritual-card');
+                cards.forEach(card => {
+                    card.addEventListener('touchstart', function() {
+                        this.style.transform = 'translateY(-5px) scale(1.01)';
+                    });
+                    
+                    card.addEventListener('touchend', function() {
+                        this.style.transform = '';
+                    });
+                });
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'969c05cc03da3e4b',t:'MTc1NDI4OTIwMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
