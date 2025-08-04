@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleansing & Protection Spells | Sacred Candle Magic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#191970',
+                        deepPurple: '#5D3FD3',
+                        softPurple: '#9370DB',
+                        lavender: '#E6E6FA',
+                        gold: '#FFD700',
+                        mystic: '#8A2BE2',
+                        ethereal: '#BF55EC',
+                        protection: '#4B0082',
+                        cleansing: '#6A5ACD',
+                        shield: '#483D8B',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #191970 0%, #4B0082 50%, #6A5ACD 100%);
+            color: #E6E6FA;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .floating {
+            animation: floating 4s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .glass-card {
+            background: rgba(75, 0, 130, 0.15);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        
+        .protection-card {
+            transition: all 0.4s ease;
+            background: rgba(75, 0, 130, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .protection-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.15);
+        }
+        
+        .whatsapp-btn {
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+        }
+        
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+        
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .twinkle-star {
+            position: absolute;
+            background-color: #ffffff;
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            opacity: 0;
+            animation: twinkle 5s infinite;
+        }
+        
+        @keyframes twinkle {
+            0% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1.2); }
+            100% { opacity: 0; transform: scale(0.5); }
+        }
+        
+        .sacred-geometry {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.08;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%239370DB' fill-opacity='0.6'%3E%3Cpath d='M100 20L180 100L100 180L20 100Z' stroke='%23FFD700' stroke-width='2' fill='none'/%3E%3Ccircle cx='100' cy='100' r='30' fill='none' stroke='%23FFD700' stroke-width='2'/%3E%3Cpath d='M70 70L130 70L130 130L70 130Z' fill='none' stroke='%239370DB' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .cosmic-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.06;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%234B0082' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .glow-text {
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        }
+        
+        .protection-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 768px) {
+            .protection-container {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        
+        .protection-glow {
+            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8));
+            animation: protection-pulse 4s infinite alternate;
+        }
+        
+        @keyframes protection-pulse {
+            0% { filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.6)); }
+            100% { filter: drop-shadow(0 0 25px rgba(255, 215, 0, 1)); }
+        }
+        
+        .shield-energy {
+            animation: shield-pulse 3s infinite;
+            transform-origin: center;
+        }
+        
+        @keyframes shield-pulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 1; }
+        }
+        
+        .cleansing-flame {
+            animation: cleanse-flicker 2s infinite alternate;
+            transform-origin: bottom center;
+        }
+        
+        @keyframes cleanse-flicker {
+            0%, 100% { transform: scaleX(1) scaleY(1); opacity: 1; }
+            25% { transform: scaleX(0.95) scaleY(1.05); opacity: 0.9; }
+            50% { transform: scaleX(1.05) scaleY(0.95); opacity: 1; }
+            75% { transform: scaleX(0.98) scaleY(1.02); opacity: 0.95; }
+        }
+        
+        .protection-flame {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background: radial-gradient(ellipse at bottom, #FFD700, #4B0082);
+            border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+            animation: flame-dance 1.5s infinite alternate;
+        }
+        
+        .protection-flame::before {
+            content: '';
+            position: absolute;
+            top: -12px;
+            left: 6px;
+            width: 12px;
+            height: 18px;
+            background: radial-gradient(ellipse at bottom, #FFD700, transparent);
+            border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+            transform: rotate(-25deg);
+            animation: flame-dance 1s infinite alternate;
+        }
+        
+        .protection-flame::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            right: 6px;
+            width: 10px;
+            height: 15px;
+            background: radial-gradient(ellipse at bottom, #FFD700, transparent);
+            border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+            transform: rotate(25deg);
+            animation: flame-dance 1.3s infinite alternate;
+        }
+        
+        @keyframes flame-dance {
+            0%, 100% { transform: scaleX(1) scaleY(1); opacity: 1; }
+            25% { transform: scaleX(0.9) scaleY(1.1); opacity: 0.9; }
+            50% { transform: scaleX(1.1) scaleY(0.9); opacity: 1; }
+            75% { transform: scaleX(0.95) scaleY(1.05); opacity: 0.95; }
+        }
+        
+        .cleansing-btn {
+            background: linear-gradient(135deg, #4B0082, #6A5ACD, #9370DB);
+            background-size: 200% 200%;
+            animation: gradient-shift 4s ease infinite;
+            transition: all 0.3s ease;
+        }
+        
+        .cleansing-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(75, 0, 130, 0.4);
+        }
+        
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .protection-particles {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: radial-gradient(circle, #FFD700, transparent);
+            border-radius: 50%;
+            opacity: 0;
+            animation: float-protect 4s ease-out infinite;
+        }
+        
+        @keyframes float-protect {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            20% { opacity: 1; }
+            80% { opacity: 0.3; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+        
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, rgba(255, 215, 0, 0.6), transparent);
+            margin: 3rem 0;
+            position: relative;
+        }
+        
+        .section-divider::before {
+            content: '🛡️';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #191970, #4B0082);
+            padding: 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        .spell-price {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(75, 0, 130, 0.1));
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 8px;
+            padding: 8px 16px;
+            display: inline-block;
+            margin-top: 8px;
+        }
+        
+        .energy-barrier {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 50%;
+            animation: barrier-pulse 3s infinite;
+        }
+        
+        @keyframes barrier-pulse {
+            0%, 100% { transform: scale(1); opacity: 0.3; }
+            50% { transform: scale(1.1); opacity: 0.6; }
+        }
+        
+        /* Mobile optimizations */
+        @media (max-width: 640px) {
+            .protection-card {
+                padding: 1.5rem;
+            }
+            
+            .protection-flame {
+                width: 20px;
+                height: 20px;
+            }
+            
+            .section-divider {
+                margin: 2rem 0;
+            }
+            
+            .protection-container {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .spell-price {
+                font-size: 0.9rem;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    <div class="sacred-geometry"></div>
+    
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <div class="mb-8">
+                <!-- Protection Shield Icon -->
+                <div class="protection-container floating protection-glow">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Energy Barrier -->
+                        <g class="energy-barrier" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.4">
+                            <circle cx="100" cy="100" r="85" />
+                        </g>
+                        
+                        <!-- Shield Base -->
+                        <g class="shield-energy">
+                            <path d="M100 20 L160 60 L160 120 C160 150 130 170 100 180 C70 170 40 150 40 120 L40 60 Z" 
+                                  fill="#4B0082" stroke="#FFD700" stroke-width="3" opacity="0.8"/>
+                        </g>
+                        
+                        <!-- Inner Protection Symbol -->
+                        <g fill="#FFD700" opacity="0.9">
+                            <!-- Cross/Plus Symbol -->
+                            <rect x="95" y="70" width="10" height="60" />
+                            <rect x="75" y="95" width="50" height="10" />
+                        </g>
+                        
+                        <!-- Sacred Geometry -->
+                        <g class="cleansing-flame" fill="#9370DB" opacity="0.6">
+                            <circle cx="100" cy="100" r="25" fill="none" stroke="#FFD700" stroke-width="2"/>
+                            <path d="M85 85 L115 85 L115 115 L85 115 Z" fill="none" stroke="#FFD700" stroke-width="1"/>
+                        </g>
+                        
+                        <!-- Protective Eyes -->
+                        <g fill="#FFD700">
+                            <circle cx="85" cy="90" r="3" />
+                            <circle cx="115" cy="90" r="3" />
+                        </g>
+                        
+                        <!-- Cleansing Flames -->
+                        <g transform="translate(70, 50) scale(0.4)">
+                            <path d="M0,-30 C-10,-15 -10,-5 0,0 C10,-5 10,-15 0,-30" fill="#FFD700" />
+                            <path d="M0,-25 C-5,-15 -5,-7 0,-2 C5,-7 5,-15 0,-25" fill="#4B0082" opacity="0.8" />
+                        </g>
+                        
+                        <g transform="translate(130, 50) scale(0.4)">
+                            <path d="M0,-30 C-10,-15 -10,-5 0,0 C10,-5 10,-15 0,-30" fill="#FFD700" />
+                            <path d="M0,-25 C-5,-15 -5,-7 0,-2 C5,-7 5,-15 0,-25" fill="#4B0082" opacity="0.8" />
+                        </g>
+                        
+                        <!-- Energy Rays -->
+                        <g fill="#FFD700" opacity="0.5">
+                            <path d="M100,30 L105,15 L100,20 L95,15 Z" />
+                            <path d="M130,50 L145,40 L135,50 L145,60 Z" />
+                            <path d="M130,150 L145,160 L135,150 L145,140 Z" />
+                            <path d="M70,150 L55,160 L65,150 L55,140 Z" />
+                            <path d="M70,50 L55,40 L65,50 L55,60 Z" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gold glow-text">Cleansing & Protection Spells</h1>
+            <p class="text-xl md:text-2xl text-lavender">🛡️🔥 Protect Your Energy & Remove Negativity 🔥🛡️</p>
+        </header>
+        
+        <!-- Introduction -->
+        <div class="glass-card rounded-xl p-6 md:p-8 mb-8 relative overflow-hidden">
+            <div class="cosmic-pattern"></div>
+            <div class="text-center">
+                <p class="text-lavender mb-6 text-lg md:text-xl leading-relaxed">
+                    Protect your energy, remove negativity, and block unwanted influences. 
+                    These powerful cleansing and protection rituals will shield you from harm while clearing away toxic energies that no longer serve you.
+                </p>
+                
+                <div class="flex justify-center space-x-6 mb-6">
+                    <div class="protection-flame"></div>
+                    <div class="protection-flame"></div>
+                    <div class="protection-flame"></div>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="glass-card rounded-lg p-3">
+                        <span class="text-2xl mb-2 block">🧿</span>
+                        <span class="text-lavender text-sm">Evil Eye Protection</span>
+                    </div>
+                    <div class="glass-card rounded-lg p-3">
+                        <span class="text-2xl mb-2 block">✂️</span>
+                        <span class="text-lavender text-sm">Cord Cutting</span>
+                    </div>
+                    <div class="glass-card rounded-lg p-3">
+                        <span class="text-2xl mb-2 block">🌪️</span>
+                        <span class="text-lavender text-sm">Negativity Removal</span>
+                    </div>
+                    <div class="glass-card rounded-lg p-3">
+                        <span class="text-2xl mb-2 block">🛡️</span>
+                        <span class="text-lavender text-sm">Energy Shield</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <!-- Spells Offered -->
+        <div class="mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-8 text-center glow-text">Spells Offered ✨</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Negativity Removal Spell -->
+                <div class="protection-card rounded-xl p-6 relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="text-center mb-4">
+                        <div class="inline-block p-4 rounded-full bg-protection bg-opacity-20 mb-4">
+                            <span class="text-3xl">🌪️</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-gold mb-3">Negativity Removal Spell</h3>
+                        <p class="text-lavender mb-4 leading-relaxed">
+                            Clears toxic energy, blocks, and jealousy from your life. This powerful cleansing ritual removes all forms of negative energy that may be affecting your well-being, relationships, or success.
+                        </p>
+                        <div class="spell-price">
+                            <span class="text-gold font-bold text-lg">₹999</span>
+                            <span class="text-lavender text-sm ml-2">(1-day ritual)</span>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="https://wa.me/918010575689?text=Hi,%20I'm%20interested%20in%20the%20Negativity%20Removal%20Spell" target="_blank" class="cleansing-btn text-white py-2 px-6 rounded-lg inline-flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            Book This Spell
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Love Uncrossing Spell -->
+                <div class="protection-card rounded-xl p-6 relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="text-center mb-4">
+                        <div class="inline-block p-4 rounded-full bg-protection bg-opacity-20 mb-4">
+                            <span class="text-3xl">💔</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-gold mb-3">Love Uncrossing Spell</h3>
+                        <p class="text-lavender mb-4 leading-relaxed">
+                            Removes curses or blocks in your love life. This specialized ritual clears away any spiritual interference that may be preventing you from finding or maintaining healthy romantic relationships.
+                        </p>
+                        <div class="spell-price">
+                            <span class="text-gold font-bold text-lg">₹1,111</span>
+                            <span class="text-lavender text-sm ml-2">(1-day ritual)</span>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="https://wa.me/918010575689?text=Hi,%20I'm%20interested%20in%20the%20Love%20Uncrossing%20Spell" target="_blank" class="cleansing-btn text-white py-2 px-6 rounded-lg inline-flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            Book This Spell
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Third-Party Removal Spell -->
+                <div class="protection-card rounded-xl p-6 relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="text-center mb-4">
+                        <div class="inline-block p-4 rounded-full bg-protection bg-opacity-20 mb-4">
+                            <span class="text-3xl">🚫</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-gold mb-3">Third-Party Removal Spell</h3>
+                        <p class="text-lavender mb-4 leading-relaxed">
+                            Removes unwanted interference from others in your relationships or personal life. This protective ritual creates boundaries and removes the influence of people who shouldn't be involved in your affairs.
+                        </p>
+                        <div class="spell-price">
+                            <span class="text-gold font-bold text-lg">₹1,222</span>
+                            <span class="text-lavender text-sm ml-2">(1-day ritual)</span>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="https://wa.me/918010575689?text=Hi,%20I'm%20interested%20in%20the%20Third-Party%20Removal%20Spell" target="_blank" class="cleansing-btn text-white py-2 px-6 rounded-lg inline-flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            Book This Spell
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Cord Cutting Spell -->
+                <div class="protection-card rounded-xl p-6 relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="text-center mb-4">
+                        <div class="inline-block p-4 rounded-full bg-protection bg-opacity-20 mb-4">
+                            <span class="text-3xl">✂️</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-gold mb-3">Cord Cutting Spell</h3>
+                        <p class="text-lavender mb-4 leading-relaxed">
+                            Cuts ties with past lovers or toxic individuals. This liberating ritual severs energetic connections that keep you bound to people who drain your energy or prevent you from moving forward.
+                        </p>
+                        <div class="spell-price">
+                            <span class="text-gold font-bold text-lg">₹1,222</span>
+                            <span class="text-lavender text-sm ml-2">(1-day ritual)</span>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="https://wa.me/918010575689?text=Hi,%20I'm%20interested%20in%20the%20Cord%20Cutting%20Spell" target="_blank" class="cleansing-btn text-white py-2 px-6 rounded-lg inline-flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            Book This Spell
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <!-- Pricing Note -->
+        <div class="mb-8">
+            <div class="glass-card rounded-xl p-6 md:p-8 relative overflow-hidden text-center">
+                <div class="cosmic-pattern"></div>
+                <h3 class="text-2xl font-bold text-gold mb-4">Extended Ritual Options</h3>
+                <p class="text-lavender mb-4 text-lg">
+                    💌 <strong>Note:</strong> Prices listed are for 1-day rituals.
+                </p>
+                <p class="text-lavender mb-6">
+                    For more intensive cleansing and protection, longer rituals are available. 
+                    Contact us to know the rates for 3, 5, 7, or 9-day spells for deeper transformation and stronger protection.
+                </p>
+                <a href="https://wa.me/918010575689?text=Hi,%20I'd%20like%20to%20know%20about%20extended%20ritual%20options%20for%20cleansing%20and%20protection%20spells" target="_blank" class="whatsapp-btn text-white py-3 px-6 rounded-full inline-flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-2"></i>
+                    Ask About Extended Rituals
+                </a>
+            </div>
+        </div>
+        
+        <!-- How Protection Works -->
+        <div class="mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-8 text-center glow-text">How Protection Works 🛡️</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="protection-card rounded-xl p-6 text-center relative overflow-hidden">
+                    <div class="cosmic-pattern"></div>
+                    <div class="inline-block p-4 rounded-full bg-deepPurple bg-opacity-30 mb-4">
+                        <span class="text-3xl">🔍</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gold mb-3">1. Identify Threats</h3>
+                    <p class="text-lavender">We identify the source and nature of negative energies affecting your life</p>
+                </div>
+                
+                <div class="protection-card rounded-xl p-6 text-center relative overflow-hidden">
+                    <div class="cosmic-pattern"></div>
+                    <div class="inline-block p-4 rounded-full bg-deepPurple bg-opacity-30 mb-4">
+                        <span class="text-3xl">🔥</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gold mb-3">2. Cleanse & Remove</h3>
+                    <p class="text-lavender">Powerful cleansing rituals remove all negative influences and toxic energies</p>
+                </div>
+                
+                <div class="protection-card rounded-xl p-6 text-center relative overflow-hidden">
+                    <div class="cosmic-pattern"></div>
+                    <div class="inline-block p-4 rounded-full bg-deepPurple bg-opacity-30 mb-4">
+                        <span class="text-3xl">🛡️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gold mb-3">3. Create Protection</h3>
+                    <p class="text-lavender">Establish strong energetic barriers to prevent future negative influences</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Benefits -->
+        <div class="mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-8 text-center glow-text">Benefits of Cleansing & Protection ✨</h2>
+            
+            <div class="glass-card rounded-xl p-6 md:p-8 relative overflow-hidden">
+                <div class="cosmic-pattern"></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <span class="text-gold text-xl mr-3">🌟</span>
+                            <span class="text-lavender">Improved mental clarity and peace</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gold text-xl mr-3">💪</span>
+                            <span class="text-lavender">Stronger personal boundaries</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gold text-xl mr-3">❤️</span>
+                            <span class="text-lavender">Healthier relationships</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gold text-xl mr-3">🚀</span>
+                            <span class="text-lavender">Increased success and opportunities</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <span class="text-gold text-xl mr-3">😌</span>
+                            <span class="text-lavender">Reduced anxiety and stress</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gold text-xl mr-3">🔋</span>
+                            <span class="text-lavender">Higher energy levels</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gold text-xl mr-3">🛡️</span>
+                            <span class="text-lavender">Protection from future negativity</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gold text-xl mr-3">🌈</span>
+                            <span class="text-lavender">Overall improved well-being</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CTA -->
+        <div class="mb-8">
+            <div class="glass-card rounded-xl p-6 md:p-8 relative overflow-hidden text-center">
+                <div class="cosmic-pattern"></div>
+                
+                <h2 class="text-2xl md:text-3xl font-bold text-gold mb-4">Ready to Cleanse & Protect Your Energy?</h2>
+                <p class="text-lavender mb-6 text-lg">
+                    ✨ All spells are customized to your unique needs and performed with pure intentions, high vibrational energy, and complete confidentiality.
+                </p>
+                
+                <a href="https://wa.me/918010575689?text=Hi,%20I'm%20interested%20in%20cleansing%20and%20protection%20spells.%20Please%20help%20me%20choose%20the%20right%20one%20for%20my%20situation" target="_blank" class="whatsapp-btn text-white py-3 px-8 rounded-full inline-flex items-center justify-center shadow-lg text-lg font-bold">
+                    <i class="fab fa-whatsapp text-xl mr-3"></i>
+                    Get Protected Now
+                </a>
+                
+                <div id="protection-particles-container" class="relative h-24 w-full mt-8">
+                    <!-- Protection particles will be added here via JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create twinkling stars
+            const starsContainer = document.getElementById('stars');
+            const starsCount = 120;
+            
+            for (let i = 0; i < starsCount; i++) {
+                const star = document.createElement('div');
+                star.classList.add('twinkle-star');
+                
+                // Random position
+                const left = Math.random() * 100;
+                const top = Math.random() * 100;
+                
+                star.style.left = `${left}%`;
+                star.style.top = `${top}%`;
+                
+                // Random animation delay
+                star.style.animationDelay = `${Math.random() * 5}s`;
+                
+                starsContainer.appendChild(star);
+            }
+            
+            // Create protection particles
+            const particlesContainer = document.getElementById('protection-particles-container');
+            const particlesCount = 18;
+            
+            for (let i = 0; i < particlesCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('protection-particles');
+                
+                // Random position
+                const left = Math.random() * 100;
+                
+                particle.style.left = `${left}%`;
+                particle.style.bottom = '0';
+                
+                // Random animation delay
+                particle.style.animationDelay = `${Math.random() * 4}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+            
+            // Add shield pulse effect
+            setInterval(() => {
+                const shields = document.querySelectorAll('.shield-energy');
+                shields.forEach(shield => {
+                    shield.style.animationDelay = `${Math.random() * 3}s`;
+                });
+            }, 4000);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'969bb5a1a76646b0',t:'MTc1NDI4NTkxNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

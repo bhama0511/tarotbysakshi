@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiritual & Energy Spells | Sacred Candle Magic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#191970',
+                        deepPurple: '#5D3FD3',
+                        softPurple: '#9370DB',
+                        lavender: '#E6E6FA',
+                        gold: '#FFD700',
+                        mystic: '#8A2BE2',
+                        ethereal: '#BF55EC',
+                        chakraRed: '#FF0000',
+                        chakraOrange: '#FF8C00',
+                        chakraYellow: '#FFD700',
+                        chakraGreen: '#00FF00',
+                        chakraBlue: '#0080FF',
+                        chakraIndigo: '#4B0082',
+                        chakraViolet: '#8A2BE2',
+                        healingGreen: '#32CD32',
+                        peacefulBlue: '#87CEEB',
+                        energyPink: '#FF69B4',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #191970 0%, #8A2BE2 25%, #9370DB 50%, #87CEEB 75%, #32CD32 100%);
+            color: #E6E6FA;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .floating {
+            animation: floating 5s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .glass-card {
+            background: rgba(138, 43, 226, 0.15);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        
+        .energy-card {
+            transition: all 0.4s ease;
+            background: rgba(138, 43, 226, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .energy-card:hover {
+            transform: translateY(-6px) scale(1.02);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            box-shadow: 0 15px 40px rgba(138, 43, 226, 0.25);
+        }
+        
+        .energy-card:active {
+            transform: translateY(-3px) scale(1.01);
+        }
+        
+        .whatsapp-btn {
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            min-height: 48px;
+            touch-action: manipulation;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+        
+        .whatsapp-btn:active {
+            transform: translateY(0);
+        }
+        
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .twinkle-star {
+            position: absolute;
+            background-color: #ffffff;
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            opacity: 0;
+            animation: twinkle 6s infinite;
+        }
+        
+        @keyframes twinkle {
+            0% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1.2); }
+            100% { opacity: 0; transform: scale(0.5); }
+        }
+        
+        .sacred-geometry {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.08;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%23FFD700' fill-opacity='0.3'%3E%3Ccircle cx='100' cy='100' r='80' fill='none' stroke='%23FFD700' stroke-width='1'/%3E%3Cpath d='M100 40 L160 100 L100 160 L40 100 Z' fill='none' stroke='%23FFD700' stroke-width='1'/%3E%3Ccircle cx='100' cy='100' r='30' fill='none' stroke='%23FFD700' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .glow-text {
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        }
+        
+        .spiritual-container {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 640px) {
+            .spiritual-container {
+                width: 160px;
+                height: 160px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .spiritual-container {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        
+        .spiritual-glow {
+            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8));
+            animation: spiritual-pulse 4s infinite alternate;
+        }
+        
+        @keyframes spiritual-pulse {
+            0% { filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.6)); }
+            100% { filter: drop-shadow(0 0 25px rgba(255, 215, 0, 1)); }
+        }
+        
+        .chakra-energy {
+            animation: chakra-spin 8s linear infinite;
+            transform-origin: center;
+        }
+        
+        @keyframes chakra-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .healing-wave {
+            animation: wave-flow 4s ease-in-out infinite;
+            transform-origin: center;
+        }
+        
+        @keyframes wave-flow {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+        
+        .energy-orb {
+            position: absolute;
+            border-radius: 50%;
+            animation: orb-float 3s ease-in-out infinite;
+        }
+        
+        @keyframes orb-float {
+            0%, 100% { transform: translateY(0) scale(1); opacity: 0.7; }
+            50% { transform: translateY(-15px) scale(1.1); opacity: 1; }
+        }
+        
+        .spiritual-btn {
+            background: linear-gradient(135deg, #8A2BE2, #9370DB, #87CEEB, #32CD32);
+            background-size: 300% 300%;
+            animation: gradient-flow 5s ease infinite;
+            transition: all 0.3s ease;
+            min-height: 48px;
+            touch-action: manipulation;
+        }
+        
+        .spiritual-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(138, 43, 226, 0.4);
+        }
+        
+        .spiritual-btn:active {
+            transform: translateY(0);
+        }
+        
+        @keyframes gradient-flow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, rgba(255, 215, 0, 0.6), transparent);
+            margin: 2rem 0;
+            position: relative;
+        }
+        
+        .section-divider::before {
+            content: '🌌';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #191970, #8A2BE2);
+            padding: 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        .spell-price {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(138, 43, 226, 0.1));
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 8px;
+            padding: 8px 16px;
+            display: inline-block;
+            margin-top: 8px;
+        }
+        
+        .chakra-wheel {
+            animation: chakra-rotation 12s linear infinite;
+            transform-origin: center;
+        }
+        
+        @keyframes chakra-rotation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .energy-particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: radial-gradient(circle, #FFD700, transparent);
+            border-radius: 50%;
+            opacity: 0;
+            animation: particle-rise 4s ease-out infinite;
+        }
+        
+        @keyframes particle-rise {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            20% { opacity: 1; }
+            80% { opacity: 0.3; }
+            100% { transform: translateY(-80px) rotate(360deg); opacity: 0; }
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+        }
+        
+        @media (min-width: 640px) {
+            .feature-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1rem;
+            }
+        }
+        
+        .spell-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .spell-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        
+        @media (min-width: 640px) {
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+        }
+        
+        .process-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .process-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+            }
+        }
+        
+        .chakra-colors {
+            animation: chakra-color-cycle 7s infinite;
+        }
+        
+        @keyframes chakra-color-cycle {
+            0% { fill: #FF0000; }
+            14% { fill: #FF8C00; }
+            28% { fill: #FFD700; }
+            42% { fill: #00FF00; }
+            57% { fill: #0080FF; }
+            71% { fill: #4B0082; }
+            85% { fill: #8A2BE2; }
+            100% { fill: #FF0000; }
+        }
+        
+        /* Mobile-specific optimizations */
+        @media (max-width: 640px) {
+            .energy-card {
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+            .section-divider {
+                margin: 1.5rem 0;
+            }
+            
+            .spell-price {
+                font-size: 0.85rem;
+                padding: 6px 12px;
+            }
+            
+            .glass-card {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+                line-height: 1.3;
+            }
+            
+            h3 {
+                font-size: 1.25rem;
+                line-height: 1.3;
+            }
+            
+            .whatsapp-btn, .spiritual-btn {
+                width: 100%;
+                justify-content: center;
+                padding: 0.75rem 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .floating {
+                animation-duration: 6s;
+            }
+            
+            @keyframes floating {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-6px); }
+                100% { transform: translateY(0px); }
+            }
+            
+            .energy-orb {
+                width: 15px;
+                height: 15px;
+            }
+            
+            .energy-particle {
+                width: 3px;
+                height: 3px;
+            }
+        }
+        
+        /* Touch-friendly interactions */
+        @media (hover: none) and (pointer: coarse) {
+            .energy-card:hover {
+                transform: none;
+                border: 1px solid rgba(255, 215, 0, 0.1);
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            }
+            
+            .whatsapp-btn:hover,
+            .spiritual-btn:hover {
+                transform: none;
+                box-shadow: none;
+            }
+        }
+        
+        /* Reduced motion for accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            .floating,
+            .spiritual-glow,
+            .chakra-energy,
+            .healing-wave,
+            .orb-float,
+            .gradient-flow,
+            .chakra-rotation,
+            .particle-rise,
+            .chakra-color-cycle,
+            .twinkle {
+                animation: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    <div class="sacred-geometry"></div>
+    
+    <div class="container mx-auto px-3 py-6 max-w-6xl">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <div class="mb-6">
+                <!-- Spiritual Energy Icon -->
+                <div class="spiritual-container floating spiritual-glow">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer Energy Ring -->
+                        <g class="healing-wave" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.6">
+                            <circle cx="100" cy="100" r="90" />
+                            <circle cx="100" cy="100" r="75" />
+                        </g>
+                        
+                        <!-- Chakra Wheel -->
+                        <g class="chakra-wheel">
+                            <!-- Root Chakra -->
+                            <circle cx="100" cy="160" r="8" fill="#FF0000" opacity="0.8" />
+                            <!-- Sacral Chakra -->
+                            <circle cx="100" cy="140" r="8" fill="#FF8C00" opacity="0.8" />
+                            <!-- Solar Plexus Chakra -->
+                            <circle cx="100" cy="120" r="8" fill="#FFD700" opacity="0.8" />
+                            <!-- Heart Chakra -->
+                            <circle cx="100" cy="100" r="10" fill="#00FF00" opacity="0.9" />
+                            <!-- Throat Chakra -->
+                            <circle cx="100" cy="80" r="8" fill="#0080FF" opacity="0.8" />
+                            <!-- Third Eye Chakra -->
+                            <circle cx="100" cy="60" r="8" fill="#4B0082" opacity="0.8" />
+                            <!-- Crown Chakra -->
+                            <circle cx="100" cy="40" r="8" fill="#8A2BE2" opacity="0.8" />
+                        </g>
+                        
+                        <!-- Central Spiritual Symbol -->
+                        <g class="chakra-energy">
+                            <!-- Lotus Petals -->
+                            <g fill="#FFD700" opacity="0.7">
+                                <path d="M100,85 C95,80 95,75 100,70 C105,75 105,80 100,85" />
+                                <path d="M115,100 C120,95 125,95 130,100 C125,105 120,105 115,100" />
+                                <path d="M100,115 C105,120 105,125 100,130 C95,125 95,120 100,115" />
+                                <path d="M85,100 C80,105 75,105 70,100 C75,95 80,95 85,100" />
+                                <path d="M111,89 C116,84 121,86 124,91 C119,96 114,94 111,89" />
+                                <path d="M111,111 C116,116 114,121 109,124 C104,119 106,114 111,111" />
+                                <path d="M89,111 C84,116 79,114 76,109 C81,104 86,106 89,111" />
+                                <path d="M89,89 C84,84 86,79 91,76 C96,81 94,86 89,89" />
+                            </g>
+                            
+                            <!-- Inner Sacred Geometry -->
+                            <circle cx="100" cy="100" r="15" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.8" />
+                            <path d="M100,85 L115,100 L100,115 L85,100 Z" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.6" />
+                        </g>
+                        
+                        <!-- Energy Orbs -->
+                        <g class="energy-orb" style="top: 20%; left: 20%;">
+                            <circle cx="60" cy="60" r="4" fill="#87CEEB" opacity="0.8" />
+                        </g>
+                        <g class="energy-orb" style="top: 20%; right: 20%; animation-delay: 1s;">
+                            <circle cx="140" cy="60" r="4" fill="#32CD32" opacity="0.8" />
+                        </g>
+                        <g class="energy-orb" style="bottom: 20%; left: 20%; animation-delay: 2s;">
+                            <circle cx="60" cy="140" r="4" fill="#FF69B4" opacity="0.8" />
+                        </g>
+                        <g class="energy-orb" style="bottom: 20%; right: 20%; animation-delay: 0.5s;">
+                            <circle cx="140" cy="140" r="4" fill="#9370DB" opacity="0.8" />
+                        </g>
+                        
+                        <!-- Spiritual Rays -->
+                        <g fill="#FFD700" opacity="0.5">
+                            <path d="M100,20 L105,5 L100,10 L95,5 Z" />
+                            <path d="M130,30 L145,20 L135,30 L145,40 Z" />
+                            <path d="M170,100 L185,95 L175,100 L185,105 Z" />
+                            <path d="M130,170 L145,180 L135,170 L145,160 Z" />
+                            <path d="M100,180 L105,195 L100,190 L95,195 Z" />
+                            <path d="M70,170 L55,180 L65,170 L55,160 Z" />
+                            <path d="M30,100 L15,105 L25,100 L15,95 Z" />
+                            <path d="M70,30 L55,20 L65,30 L55,40 Z" />
+                        </g>
+                        
+                        <!-- Healing Aura -->
+                        <g class="healing-wave" fill="none" stroke="#32CD32" stroke-width="1" opacity="0.4">
+                            <circle cx="100" cy="100" r="60" />
+                            <circle cx="100" cy="100" r="45" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 text-gold glow-text">Spiritual & Energy Spells</h1>
+            <p class="text-lg sm:text-xl md:text-2xl text-lavender px-2">🌌🌈 Balance Your Energy & Align Your Chakras 🌈🌌</p>
+        </header>
+        
+        <!-- Introduction -->
+        <div class="glass-card rounded-xl p-4 sm:p-6 md:p-8 mb-6 relative overflow-hidden">
+            <div class="sacred-geometry"></div>
+            <div class="text-center">
+                <p class="text-lavender mb-4 text-base sm:text-lg md:text-xl leading-relaxed">
+                    Balance your energy, align your chakras, and enhance your overall well-being. 
+                    These transformative spiritual rituals work on multiple levels to bring harmony to your mind, body, and spirit.
+                </p>
+                
+                <div class="flex justify-center space-x-4 mb-4" id="energy-particles">
+                    <!-- Energy particles will be added here -->
+                </div>
+                
+                <div class="feature-grid text-center">
+                    <div class="glass-card rounded-lg p-2 sm:p-3">
+                        <span class="text-xl sm:text-2xl mb-1 sm:mb-2 block">🧘‍♀️</span>
+                        <span class="text-lavender text-xs sm:text-sm">Chakra Balance</span>
+                    </div>
+                    <div class="glass-card rounded-lg p-2 sm:p-3">
+                        <span class="text-xl sm:text-2xl mb-1 sm:mb-2 block">💚</span>
+                        <span class="text-lavender text-xs sm:text-sm">Health Healing</span>
+                    </div>
+                    <div class="glass-card rounded-lg p-2 sm:p-3">
+                        <span class="text-xl sm:text-2xl mb-1 sm:mb-2 block">⚖️</span>
+                        <span class="text-lavender text-xs sm:text-sm">Body Balance</span>
+                    </div>
+                    <div class="glass-card rounded-lg p-2 sm:p-3">
+                        <span class="text-xl sm:text-2xl mb-1 sm:mb-2 block">🕊️</span>
+                        <span class="text-lavender text-xs sm:text-sm">Inner Peace</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <!-- Spells Offered -->
+        <div class="mb-6">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gold mb-6 text-center glow-text">Spells Offered ✨</h2>
+            
+            <div class="spell-grid">
+                <!-- 7 Chakra Spell -->
+                <div class="energy-card rounded-xl p-4 sm:p-6 relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="text-center mb-3">
+                        <div class="inline-block p-3 rounded-full bg-mystic bg-opacity-20 mb-3">
+                            <span class="text-2xl sm:text-3xl">🧘‍♀️</span>
+                        </div>
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gold mb-2">7 Chakra Spell</h3>
+                        <p class="text-lavender mb-3 leading-relaxed text-sm sm:text-base">
+                            Balances and aligns all seven chakras for complete peace and harmony. This comprehensive ritual works on your entire energy system for profound transformation.
+                        </p>
+                        <div class="spell-price">
+                            <span class="text-gold font-bold text-base sm:text-lg">₹3,333</span>
+                            <span class="text-lavender text-xs sm:text-sm ml-2">(1-day ritual)</span>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="https://wa.me/918010575689?text=Hi,%20I'm%20interested%20in%20the%207%20Chakra%20Spell" target="_blank" class="spiritual-btn text-white py-2 px-4 rounded-lg inline-flex items-center justify-center w-full sm:w-auto">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            Book This Spell
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Health Healing Spell -->
+                <div class="energy-card rounded-xl p-4 sm:p-6 relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="text-center mb-3">
+                        <div class="inline-block p-3 rounded-full bg-mystic bg-opacity-20 mb-3">
+                            <span class="text-2xl sm:text-3xl">💚</span>
+                        </div>
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gold mb-2">Health Healing Spell</h3>
+                        <p class="text-lavender mb-3 leading-relaxed text-sm sm:text-base">
+                            Supports physical recovery and emotional healing. This nurturing ritual channels healing energy to support your body's natural recovery processes.
+                        </p>
+                        <div class="spell-price">
+                            <span class="text-gold font-bold text-base sm:text-lg">₹999</span>
+                            <span class="text-lavender text-xs sm:text-sm ml-2">(1-day ritual)</span>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="https://wa.me/918010575689?text=Hi,%20I'm%20interested%20in%20the%20Health%20Healing%20Spell" target="_blank" class="spiritual-btn text-white py-2 px-4 rounded-lg inline-flex items-center justify-center w-full sm:w-auto">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            Book This Spell
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Weight Loss/Gain Spell -->
+                <div class="energy-card rounded-xl p-4 sm:p-6 relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="text-center mb-3">
+                        <div class="inline-block p-3 rounded-full bg-mystic bg-opacity-20 mb-3">
+                            <span class="text-2xl sm:text-3xl">⚖️</span>
+                        </div>
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gold mb-2">Weight Loss / Gain Spell</h3>
+                        <p class="text-lavender mb-3 leading-relaxed text-sm sm:text-base">
+                            Supports your body transformation goals energetically. This balancing ritual aligns your energy with your desired physical changes.
+                        </p>
+                        <div class="spell-price">
+                            <span class="text-gold font-bold text-base sm:text-lg">₹888</span>
+                            <span class="text-lavender text-xs sm:text-sm ml-2">(1-day ritual)</span>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="https://wa.me/918010575689?text=Hi,%20I'm%20interested%20in%20the%20Weight%20Loss%20/%20Gain%20Spell" target="_blank" class="spiritual-btn text-white py-2 px-4 rounded-lg inline-flex items-center justify-center w-full sm:w-auto">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            Book This Spell
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Anxiety & Stress Removal Spell -->
+                <div class="energy-card rounded-xl p-4 sm:p-6 relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="text-center mb-3">
+                        <div class="inline-block p-3 rounded-full bg-mystic bg-opacity-20 mb-3">
+                            <span class="text-2xl sm:text-3xl">🕊️</span>
+                        </div>
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gold mb-2">Anxiety & Stress Removal Spell</h3>
+                        <p class="text-lavender mb-3 leading-relaxed text-sm sm:text-base">
+                            Calms the mind and brings inner peace. This soothing ritual releases tension and anxiety while promoting deep relaxation and mental clarity.
+                        </p>
+                        <div class="spell-price">
+                            <span class="text-gold font-bold text-base sm:text-lg">₹888</span>
+                            <span class="text-lavender text-xs sm:text-sm ml-2">(1-day ritual)</span>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="https://wa.me/918010575689?text=Hi,%20I'm%20interested%20in%20the%20Anxiety%20%26%20Stress%20Removal%20Spell" target="_blank" class="spiritual-btn text-white py-2 px-4 rounded-lg inline-flex items-center justify-center w-full sm:w-auto">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            Book This Spell
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <!-- Pricing Note -->
+        <div class="mb-6">
+            <div class="glass-card rounded-xl p-4 sm:p-6 md:p-8 relative overflow-hidden text-center">
+                <div class="sacred-geometry"></div>
+                <h3 class="text-xl sm:text-2xl font-bold text-gold mb-3">Extended Spiritual Healing</h3>
+                <p class="text-lavender mb-3 text-base sm:text-lg">
+                    💌 <strong>Note:</strong> Prices listed are for 1-day rituals.
+                </p>
+                <p class="text-lavender mb-4 text-sm sm:text-base">
+                    For deeper spiritual transformation and lasting energy alignment, longer rituals are available. 
+                    Contact us to know the rates for 3, 5, 7, or 9-day spells for profound healing.
+                </p>
+                <a href="https://wa.me/918010575689?text=Hi,%20I'd%20like%20to%20know%20about%20extended%20spiritual%20and%20energy%20healing%20options" target="_blank" class="whatsapp-btn text-white py-3 px-6 rounded-full inline-flex items-center justify-center w-full sm:w-auto">
+                    <i class="fab fa-whatsapp mr-2"></i>
+                    Ask About Extended Rituals
+                </a>
+            </div>
+        </div>
+        
+        <!-- How Spiritual Healing Works -->
+        <div class="mb-6">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gold mb-6 text-center glow-text">How Spiritual Healing Works 🌟</h2>
+            
+            <div class="process-grid">
+                <div class="energy-card rounded-xl p-4 sm:p-6 text-center relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="inline-block p-3 rounded-full bg-deepPurple bg-opacity-30 mb-3">
+                        <span class="text-2xl sm:text-3xl">🔍</span>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-gold mb-2">1. Energy Assessment</h3>
+                    <p class="text-lavender text-sm sm:text-base">We identify energy blockages and imbalances affecting your spiritual and physical well-being</p>
+                </div>
+                
+                <div class="energy-card rounded-xl p-4 sm:p-6 text-center relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="inline-block p-3 rounded-full bg-deepPurple bg-opacity-30 mb-3">
+                        <span class="text-2xl sm:text-3xl">⚡</span>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-gold mb-2">2. Energy Alignment</h3>
+                    <p class="text-lavender text-sm sm:text-base">Powerful rituals realign your chakras and restore natural energy flow throughout your system</p>
+                </div>
+                
+                <div class="energy-card rounded-xl p-4 sm:p-6 text-center relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="inline-block p-3 rounded-full bg-deepPurple bg-opacity-30 mb-3">
+                        <span class="text-2xl sm:text-3xl">🌟</span>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-gold mb-2">3. Sustained Harmony</h3>
+                    <p class="text-lavender text-sm sm:text-base">Create lasting balance and vitality that supports your ongoing spiritual and physical health</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Benefits -->
+        <div class="mb-6">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gold mb-6 text-center glow-text">Benefits of Spiritual & Energy Healing ✨</h2>
+            
+            <div class="glass-card rounded-xl p-4 sm:p-6 md:p-8 relative overflow-hidden">
+                <div class="sacred-geometry"></div>
+                <div class="benefits-grid">
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <span class="text-gold text-lg sm:text-xl mr-3">🧘‍♀️</span>
+                            <span class="text-lavender text-sm sm:text-base">Balanced chakras and energy centers</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gold text-lg sm:text-xl mr-3">💚</span>
+                            <span class="text-lavender text-sm sm:text-base">Enhanced physical healing and recovery</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gold text-lg sm:text-xl mr-3">🕊️</span>
+                            <span class="text-lavender text-sm sm:text-base">Reduced anxiety and stress levels</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gold text-lg sm:text-xl mr-3">⚖️</span>
+                            <span class="text-lavender text-sm sm:text-base">Support for healthy body transformation</span>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <span class="text-gold text-lg sm:text-xl mr-3">🌟</span>
+                            <span class="text-lavender text-sm sm:text-base">Increased spiritual awareness</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gold text-lg sm:text-xl mr-3">🔋</span>
+                            <span class="text-lavender text-sm sm:text-base">Higher energy and vitality levels</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gold text-lg sm:text-xl mr-3">🌈</span>
+                            <span class="text-lavender text-sm sm:text-base">Emotional balance and stability</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gold text-lg sm:text-xl mr-3">✨</span>
+                            <span class="text-lavender text-sm sm:text-base">Overall sense of well-being and peace</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Chakra Information -->
+        <div class="mb-6">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gold mb-6 text-center glow-text">The Seven Chakras 🌈</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                <div class="energy-card rounded-xl p-4 text-center relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="mb-3">
+                        <div class="w-8 h-8 rounded-full mx-auto mb-2" style="background-color: #FF0000;"></div>
+                        <h4 class="text-gold font-bold text-sm sm:text-base">Root Chakra</h4>
+                        <p class="text-lavender text-xs sm:text-sm">Grounding & Security</p>
+                    </div>
+                </div>
+                
+                <div class="energy-card rounded-xl p-4 text-center relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="mb-3">
+                        <div class="w-8 h-8 rounded-full mx-auto mb-2" style="background-color: #FF8C00;"></div>
+                        <h4 class="text-gold font-bold text-sm sm:text-base">Sacral Chakra</h4>
+                        <p class="text-lavender text-xs sm:text-sm">Creativity & Passion</p>
+                    </div>
+                </div>
+                
+                <div class="energy-card rounded-xl p-4 text-center relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="mb-3">
+                        <div class="w-8 h-8 rounded-full mx-auto mb-2" style="background-color: #FFD700;"></div>
+                        <h4 class="text-gold font-bold text-sm sm:text-base">Solar Plexus</h4>
+                        <p class="text-lavender text-xs sm:text-sm">Personal Power</p>
+                    </div>
+                </div>
+                
+                <div class="energy-card rounded-xl p-4 text-center relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="mb-3">
+                        <div class="w-8 h-8 rounded-full mx-auto mb-2" style="background-color: #00FF00;"></div>
+                        <h4 class="text-gold font-bold text-sm sm:text-base">Heart Chakra</h4>
+                        <p class="text-lavender text-xs sm:text-sm">Love & Compassion</p>
+                    </div>
+                </div>
+                
+                <div class="energy-card rounded-xl p-4 text-center relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="mb-3">
+                        <div class="w-8 h-8 rounded-full mx-auto mb-2" style="background-color: #0080FF;"></div>
+                        <h4 class="text-gold font-bold text-sm sm:text-base">Throat Chakra</h4>
+                        <p class="text-lavender text-xs sm:text-sm">Communication</p>
+                    </div>
+                </div>
+                
+                <div class="energy-card rounded-xl p-4 text-center relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="mb-3">
+                        <div class="w-8 h-8 rounded-full mx-auto mb-2" style="background-color: #4B0082;"></div>
+                        <h4 class="text-gold font-bold text-sm sm:text-base">Third Eye</h4>
+                        <p class="text-lavender text-xs sm:text-sm">Intuition & Wisdom</p>
+                    </div>
+                </div>
+                
+                <div class="energy-card rounded-xl p-4 text-center relative overflow-hidden sm:col-span-2 lg:col-span-1">
+                    <div class="sacred-geometry"></div>
+                    <div class="mb-3">
+                        <div class="w-8 h-8 rounded-full mx-auto mb-2" style="background-color: #8A2BE2;"></div>
+                        <h4 class="text-gold font-bold text-sm sm:text-base">Crown Chakra</h4>
+                        <p class="text-lavender text-xs sm:text-sm">Spiritual Connection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CTA -->
+        <div class="mb-6">
+            <div class="glass-card rounded-xl p-4 sm:p-6 md:p-8 relative overflow-hidden text-center">
+                <div class="sacred-geometry"></div>
+                
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gold mb-3">Ready to Balance Your Energy?</h2>
+                <p class="text-lavender mb-4 text-sm sm:text-base md:text-lg">
+                    ✨ All spells are customized to your unique needs and performed with pure intentions, high vibrational energy, and complete confidentiality.
+                </p>
+                
+                <a href="https://wa.me/918010575689?text=Hi,%20I'm%20interested%20in%20spiritual%20and%20energy%20healing%20spells.%20Please%20help%20me%20choose%20the%20right%20one%20for%20my%20needs" target="_blank" class="whatsapp-btn text-white py-3 px-6 rounded-full inline-flex items-center justify-center shadow-lg text-base sm:text-lg font-bold w-full sm:w-auto">
+                    <i class="fab fa-whatsapp text-lg sm:text-xl mr-3"></i>
+                    Start Your Healing Journey
+                </a>
+                
+                <div id="spiritual-particles-container" class="relative h-20 w-full mt-6">
+                    <!-- Spiritual particles will be added here via JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create twinkling stars (optimized for mobile)
+            const starsContainer = document.getElementById('stars');
+            const isMobile = window.innerWidth < 768;
+            const starsCount = isMobile ? 60 : 100;
+            
+            for (let i = 0; i < starsCount; i++) {
+                const star = document.createElement('div');
+                star.classList.add('twinkle-star');
+                
+                // Random position
+                const left = Math.random() * 100;
+                const top = Math.random() * 100;
+                
+                star.style.left = `${left}%`;
+                star.style.top = `${top}%`;
+                
+                // Random animation delay
+                star.style.animationDelay = `${Math.random() * 6}s`;
+                
+                starsContainer.appendChild(star);
+            }
+            
+            // Create energy particles
+            const particlesContainer = document.getElementById('spiritual-particles-container');
+            const particlesCount = isMobile ? 10 : 15;
+            
+            for (let i = 0; i < particlesCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('energy-particle');
+                
+                // Random position
+                const left = Math.random() * 100;
+                
+                particle.style.left = `${left}%`;
+                particle.style.bottom = '0';
+                
+                // Random animation delay
+                particle.style.animationDelay = `${Math.random() * 4}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+            
+            // Add energy particles to header
+            const headerParticles = document.getElementById('energy-particles');
+            for (let i = 0; i < 5; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('energy-particle');
+                particle.style.position = 'relative';
+                particle.style.animationDelay = `${i * 0.5}s`;
+                headerParticles.appendChild(particle);
+            }
+            
+            // Add chakra energy variation
+            const chakraInterval = isMobile ? 8000 : 6000;
+            setInterval(() => {
+                const chakras = document.querySelectorAll('.chakra-energy');
+                chakras.forEach(chakra => {
+                    chakra.style.animationDelay = `${Math.random() * 2}s`;
+                });
+            }, chakraInterval);
+            
+            // Touch feedback for mobile
+            if ('ontouchstart' in window) {
+                const cards = document.querySelectorAll('.energy-card');
+                cards.forEach(card => {
+                    card.addEventListener('touchstart', function() {
+                        this.style.transform = 'translateY(-3px) scale(1.01)';
+                    });
+                    
+                    card.addEventListener('touchend', function() {
+                        this.style.transform = '';
+                    });
+                });
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'969bd4e821034448',t:'MTc1NDI4NzE5OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
