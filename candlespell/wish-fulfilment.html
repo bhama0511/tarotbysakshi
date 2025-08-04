@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish Manifestation Spell | Sacred Candle Magic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#191970',
+                        deepPurple: '#5D3FD3',
+                        softPurple: '#9370DB',
+                        lavender: '#E6E6FA',
+                        gold: '#FFD700',
+                        mystic: '#8A2BE2',
+                        ethereal: '#BF55EC',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #191970 0%, #5D3FD3 50%, #8A2BE2 100%);
+            color: #E6E6FA;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .floating {
+            animation: floating 4s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .glass-card {
+            background: rgba(93, 63, 211, 0.15);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        
+        .wish-card {
+            transition: all 0.4s ease;
+            background: rgba(93, 63, 211, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .wish-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.15);
+        }
+        
+        .whatsapp-btn {
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+        }
+        
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+        
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .twinkle-star {
+            position: absolute;
+            background-color: #ffffff;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            opacity: 0;
+            animation: twinkle 6s infinite;
+        }
+        
+        @keyframes twinkle {
+            0% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1.2); }
+            100% { opacity: 0; transform: scale(0.5); }
+        }
+        
+        .sacred-geometry {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.08;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%239370DB' fill-opacity='0.6'%3E%3Cpath d='M100 0L0 100l100 100 100-100L100 0zm0 40L40 100l60 60 60-60L100 40z'/%3E%3Ccircle cx='100' cy='100' r='30' fill='none' stroke='%23FFD700' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .cosmic-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.06;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%239370DB' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .glow-text {
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        }
+        
+        .wish-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 768px) {
+            .wish-container {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        
+        .wish-glow {
+            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8));
+            animation: wish-pulse 5s infinite alternate;
+        }
+        
+        @keyframes wish-pulse {
+            0% { filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.6)); }
+            100% { filter: drop-shadow(0 0 25px rgba(255, 215, 0, 1)); }
+        }
+        
+        .energy-waves {
+            animation: wave-pulse 6s infinite;
+            transform-origin: center;
+        }
+        
+        @keyframes wave-pulse {
+            0%, 100% { transform: scale(1); opacity: 0.6; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+        
+        .magic-sparkle {
+            animation: sparkle 2s infinite;
+            transform-origin: center;
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { transform: rotate(0deg) scale(1); opacity: 0.8; }
+            25% { transform: rotate(90deg) scale(1.2); opacity: 1; }
+            50% { transform: rotate(180deg) scale(0.8); opacity: 0.6; }
+            75% { transform: rotate(270deg) scale(1.1); opacity: 1; }
+        }
+        
+        .wish-flame {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background: radial-gradient(ellipse at bottom, #FFD700, #FF4500);
+            border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+            animation: flame-dance 1.5s infinite alternate;
+        }
+        
+        .wish-flame::before {
+            content: '';
+            position: absolute;
+            top: -12px;
+            left: 6px;
+            width: 12px;
+            height: 18px;
+            background: radial-gradient(ellipse at bottom, #FFD700, transparent);
+            border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+            transform: rotate(-25deg);
+            animation: flame-dance 1s infinite alternate;
+        }
+        
+        .wish-flame::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            right: 6px;
+            width: 10px;
+            height: 15px;
+            background: radial-gradient(ellipse at bottom, #FFD700, transparent);
+            border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+            transform: rotate(25deg);
+            animation: flame-dance 1.3s infinite alternate;
+        }
+        
+        @keyframes flame-dance {
+            0%, 100% { transform: scaleX(1) scaleY(1); opacity: 1; }
+            25% { transform: scaleX(0.9) scaleY(1.1); opacity: 0.9; }
+            50% { transform: scaleX(1.1) scaleY(0.9); opacity: 1; }
+            75% { transform: scaleX(0.95) scaleY(1.05); opacity: 0.95; }
+        }
+        
+        .manifestation-btn {
+            background: linear-gradient(135deg, #FFD700, #8A2BE2, #5D3FD3);
+            background-size: 200% 200%;
+            animation: gradient-shift 4s ease infinite;
+            transition: all 0.3s ease;
+        }
+        
+        .manifestation-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+        }
+        
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .price-card {
+            transition: all 0.4s ease;
+            background: rgba(93, 63, 211, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+        }
+        
+        .price-card:hover {
+            transform: translateY(-5px);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            box-shadow: 0 15px 35px rgba(255, 215, 0, 0.15);
+        }
+        
+        .wish-particles {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: radial-gradient(circle, #FFD700, transparent);
+            border-radius: 50%;
+            opacity: 0;
+            animation: float-wish 5s ease-out infinite;
+        }
+        
+        @keyframes float-wish {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            20% { opacity: 1; }
+            80% { opacity: 0.3; }
+            100% { transform: translateY(-120px) rotate(360deg); opacity: 0; }
+        }
+        
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, rgba(255, 215, 0, 0.6), transparent);
+            margin: 3rem 0;
+            position: relative;
+        }
+        
+        .section-divider::before {
+            content: '✨';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #191970, #5D3FD3);
+            padding: 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        /* Mobile optimizations */
+        @media (max-width: 640px) {
+            .wish-card {
+                padding: 1.5rem;
+            }
+            
+            .wish-flame {
+                width: 20px;
+                height: 20px;
+            }
+            
+            .section-divider {
+                margin: 2rem 0;
+            }
+            
+            .wish-container {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    <div class="sacred-geometry"></div>
+    
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <div class="mb-8">
+                <!-- Wish Manifestation Icon -->
+                <div class="wish-container floating wish-glow">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Energy Waves -->
+                        <g class="energy-waves" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.4">
+                            <circle cx="100" cy="100" r="60" />
+                            <circle cx="100" cy="100" r="75" />
+                            <circle cx="100" cy="100" r="90" />
+                        </g>
+                        
+                        <!-- Sacred Geometry Base -->
+                        <g fill="#9370DB" opacity="0.6">
+                            <path d="M100 20L180 100L100 180L20 100Z" />
+                            <circle cx="100" cy="100" r="40" fill="#5D3FD3" />
+                        </g>
+                        
+                        <!-- Central Star -->
+                        <g class="magic-sparkle" fill="#FFD700">
+                            <path d="M100 60L110 90L140 90L118 108L128 138L100 120L72 138L82 108L60 90L90 90Z" />
+                        </g>
+                        
+                        <!-- Mystical Eyes -->
+                        <g fill="#FFD700">
+                            <circle cx="85" cy="90" r="3" />
+                            <circle cx="115" cy="90" r="3" />
+                        </g>
+                        
+                        <!-- Wish Symbols -->
+                        <g class="magic-sparkle" fill="#BF55EC" opacity="0.8">
+                            <circle cx="70" cy="70" r="2" />
+                            <circle cx="130" cy="70" r="2" />
+                            <circle cx="70" cy="130" r="2" />
+                            <circle cx="130" cy="130" r="2" />
+                        </g>
+                        
+                        <!-- Candle Flame -->
+                        <g transform="translate(100, 40) scale(0.6)">
+                            <path d="M0,-35 C-12,-20 -12,-8 0,0 C12,-8 12,-20 0,-35" fill="#FFD700" />
+                            <path d="M0,-30 C-8,-18 -8,-10 0,-3 C8,-10 8,-18 0,-30" fill="#FF4500" opacity="0.9" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gold glow-text">Wish Manifestation Spell</h1>
+            <p class="text-xl md:text-2xl text-lavender">🌟✨ Turn Your Dreams Into Reality ✨🌟</p>
+        </header>
+        
+        <!-- Introduction -->
+        <div class="glass-card rounded-xl p-6 md:p-8 mb-8 relative overflow-hidden">
+            <div class="cosmic-pattern"></div>
+            <div class="text-center">
+                <p class="text-lavender mb-6 text-lg md:text-xl leading-relaxed">
+                    Turn your deepest desires into reality with this powerful manifestation ritual.
+                    Whether it's love, career, money, travel, or any personal dream — this spell aligns your energy with the Universe to help you receive what you truly wish for.
+                </p>
+                
+                <div class="flex justify-center space-x-6 mb-6">
+                    <div class="wish-flame"></div>
+                    <div class="wish-flame"></div>
+                    <div class="wish-flame"></div>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="glass-card rounded-lg p-3">
+                        <span class="text-2xl mb-2 block">💕</span>
+                        <span class="text-lavender text-sm">Love</span>
+                    </div>
+                    <div class="glass-card rounded-lg p-3">
+                        <span class="text-2xl mb-2 block">💼</span>
+                        <span class="text-lavender text-sm">Career</span>
+                    </div>
+                    <div class="glass-card rounded-lg p-3">
+                        <span class="text-2xl mb-2 block">💰</span>
+                        <span class="text-lavender text-sm">Money</span>
+                    </div>
+                    <div class="glass-card rounded-lg p-3">
+                        <span class="text-2xl mb-2 block">✈️</span>
+                        <span class="text-lavender text-sm">Travel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <!-- Spell Offered -->
+        <div class="mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-8 text-center glow-text">Spell Offered 💫</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="wish-card rounded-xl p-6 md:p-8 relative overflow-hidden">
+                    <div class="sacred-geometry"></div>
+                    <div class="text-center">
+                        <div class="inline-block p-4 rounded-full bg-gold bg-opacity-20 mb-6">
+                            <span class="text-4xl">🌟</span>
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-gold mb-4">Wish Fulfillment Spell</h3>
+                        <p class="text-lavender text-lg leading-relaxed mb-6">
+                            Helps manifest a specific desire or dream by channeling focused intention and spiritual energy toward your goal. 
+                            This powerful ritual works by aligning your personal energy with universal forces to bring your deepest wishes into reality.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                            <div class="glass-card rounded-lg p-4">
+                                <span class="text-gold text-xl mb-2 block">🎯</span>
+                                <h4 class="text-gold font-bold mb-2">Focused Intention</h4>
+                                <p class="text-lavender text-sm">Precisely targets your specific wish with concentrated spiritual energy</p>
+                            </div>
+                            <div class="glass-card rounded-lg p-4">
+                                <span class="text-gold text-xl mb-2 block">🌌</span>
+                                <h4 class="text-gold font-bold mb-2">Universal Alignment</h4>
+                                <p class="text-lavender text-sm">Connects your desire with cosmic forces for manifestation</p>
+                            </div>
+                            <div class="glass-card rounded-lg p-4">
+                                <span class="text-gold text-xl mb-2 block">✨</span>
+                                <h4 class="text-gold font-bold mb-2">Pure Energy</h4>
+                                <p class="text-lavender text-sm">Channels high-vibrational energy to accelerate results</p>
+                            </div>
+                        </div>
+                        
+                        <a href="https://wa.me/918010575689?text=Hi,%20I'm%20interested%20in%20the%20Wish%20Fulfillment%20Spell" target="_blank" class="manifestation-btn text-white py-3 px-8 rounded-full inline-flex items-center justify-center text-lg font-bold">
+                            <i class="fab fa-whatsapp mr-3"></i>
+                            Manifest Your Wish
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <!-- Spell Pricing -->
+        <div class="mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-8 text-center glow-text">Spell Pricing 💰</h2>
+            
+            <div class="price-card rounded-xl p-6 md:p-8 relative overflow-hidden max-w-3xl mx-auto">
+                <div class="sacred-geometry"></div>
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gold mb-3">Wish Fulfillment Spell</h3>
+                    <p class="text-lavender">Choose the duration that resonates with your intention</p>
+                </div>
+                
+                <div class="space-y-4 mb-8">
+                    <div class="flex justify-between items-center border-b border-lavender border-opacity-20 pb-3">
+                        <div class="flex items-center">
+                            <span class="text-gold mr-3">🌟</span>
+                            <span class="text-lavender text-lg">1 Day</span>
+                        </div>
+                        <span class="text-gold font-bold text-xl">₹888</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-lavender border-opacity-20 pb-3">
+                        <div class="flex items-center">
+                            <span class="text-gold mr-3">✨</span>
+                            <span class="text-lavender text-lg">3 Days</span>
+                        </div>
+                        <span class="text-gold font-bold text-xl">₹2,222</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-lavender border-opacity-20 pb-3">
+                        <div class="flex items-center">
+                            <span class="text-gold mr-3">🌙</span>
+                            <span class="text-lavender text-lg">5 Days</span>
+                        </div>
+                        <span class="text-gold font-bold text-xl">₹3,666</span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-lavender border-opacity-20 pb-3">
+                        <div class="flex items-center">
+                            <span class="text-gold mr-3">🔮</span>
+                            <span class="text-lavender text-lg">7 Days</span>
+                        </div>
+                        <span class="text-gold font-bold text-xl">₹5,333</span>
+                    </div>
+                    <div class="flex justify-between items-center pb-3">
+                        <div class="flex items-center">
+                            <span class="text-gold mr-3">💫</span>
+                            <span class="text-lavender text-lg">9 Days</span>
+                        </div>
+                        <span class="text-gold font-bold text-xl">₹7,111</span>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="https://wa.me/918010575689?text=Hi,%20I'm%20interested%20in%20booking%20the%20Wish%20Fulfillment%20Spell" target="_blank" class="manifestation-btn text-white py-3 px-8 rounded-full inline-flex items-center justify-center text-lg font-bold w-full md:w-auto">
+                        <i class="fab fa-whatsapp mr-3"></i>
+                        Book Your Spell
+                    </a>
+                </div>
+            </div>
+            
+            <div class="glass-card rounded-xl p-4 mt-6 text-center max-w-3xl mx-auto">
+                <p class="text-lavender">
+                    <span class="text-gold mr-2">💌</span>
+                    <strong>Note:</strong> This spell can be customized for any type of wish, provided it aligns with positive and ethical intentions. Confidentiality is always maintained.
+                </p>
+            </div>
+        </div>
+        
+        <div class="section-divider"></div>
+        
+        <!-- How It Works -->
+        <div class="mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-8 text-center glow-text">How It Works ✨</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="wish-card rounded-xl p-6 text-center relative overflow-hidden">
+                    <div class="cosmic-pattern"></div>
+                    <div class="inline-block p-4 rounded-full bg-deepPurple bg-opacity-30 mb-4">
+                        <span class="text-3xl">📝</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gold mb-3">1. Share Your Wish</h3>
+                    <p class="text-lavender">Tell us your specific desire or dream that you want to manifest into reality</p>
+                </div>
+                
+                <div class="wish-card rounded-xl p-6 text-center relative overflow-hidden">
+                    <div class="cosmic-pattern"></div>
+                    <div class="inline-block p-4 rounded-full bg-deepPurple bg-opacity-30 mb-4">
+                        <span class="text-3xl">🕯️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gold mb-3">2. Ritual Performance</h3>
+                    <p class="text-lavender">We perform the customized manifestation ritual with focused intention and spiritual energy</p>
+                </div>
+                
+                <div class="wish-card rounded-xl p-6 text-center relative overflow-hidden">
+                    <div class="cosmic-pattern"></div>
+                    <div class="inline-block p-4 rounded-full bg-deepPurple bg-opacity-30 mb-4">
+                        <span class="text-3xl">🌟</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gold mb-3">3. Manifestation</h3>
+                    <p class="text-lavender">Watch as the Universe aligns to bring your wish into your reality</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CTA -->
+        <div class="mb-8">
+            <div class="glass-card rounded-xl p-6 md:p-8 relative overflow-hidden text-center">
+                <div class="cosmic-pattern"></div>
+                
+                <h2 class="text-2xl md:text-3xl font-bold text-gold mb-4">Ready to Manifest Your Dreams?</h2>
+                <p class="text-lavender mb-6 text-lg">Contact us today to discuss your wish and begin your manifestation journey. Every dream deserves a chance to become reality.</p>
+                
+                <a href="https://wa.me/918010575689?text=Hi,%20I'm%20ready%20to%20manifest%20my%20wish.%20Please%20tell%20me%20more%20about%20the%20Wish%20Fulfillment%20Spell" target="_blank" class="whatsapp-btn text-white py-3 px-8 rounded-full inline-flex items-center justify-center shadow-lg text-lg font-bold">
+                    <i class="fab fa-whatsapp text-xl mr-3"></i>
+                    Start Your Manifestation
+                </a>
+                
+                <div id="wish-particles-container" class="relative h-24 w-full mt-8">
+                    <!-- Wish particles will be added here via JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create twinkling stars
+            const starsContainer = document.getElementById('stars');
+            const starsCount = 150;
+            
+            for (let i = 0; i < starsCount; i++) {
+                const star = document.createElement('div');
+                star.classList.add('twinkle-star');
+                
+                // Random position
+                const left = Math.random() * 100;
+                const top = Math.random() * 100;
+                
+                star.style.left = `${left}%`;
+                star.style.top = `${top}%`;
+                
+                // Random animation delay
+                star.style.animationDelay = `${Math.random() * 6}s`;
+                
+                starsContainer.appendChild(star);
+            }
+            
+            // Create wish particles
+            const particlesContainer = document.getElementById('wish-particles-container');
+            const particlesCount = 20;
+            
+            for (let i = 0; i < particlesCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('wish-particles');
+                
+                // Random position
+                const left = Math.random() * 100;
+                
+                particle.style.left = `${left}%`;
+                particle.style.bottom = '0';
+                
+                // Random animation delay
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+            
+            // Add some extra sparkle effects
+            setInterval(() => {
+                const sparkles = document.querySelectorAll('.magic-sparkle');
+                sparkles.forEach(sparkle => {
+                    sparkle.style.animationDelay = `${Math.random() * 2}s`;
+                });
+            }, 3000);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'969ba9d402c026a7',t:'MTc1NDI4NTQzMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
